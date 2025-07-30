@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_PlayerShip",
+  "%Name":"Obj_SpikyEnemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_PlayerShip",
+  "name":"Obj_SpikyEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_Enemy",
+    "path":"objects/Obj_Enemy/Obj_Enemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_PlayerFish",
-    "path":"sprites/Spr_PlayerFish/Spr_PlayerFish.yy",
+    "name":"Spr_SpikyEnemy",
+    "path":"sprites/Spr_SpikyEnemy/Spr_SpikyEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

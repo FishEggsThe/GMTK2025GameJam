@@ -10,9 +10,9 @@ maxShipSpeed = maxSpeed;
 
 dashSpeed = 13;
 dashCooldownSet = 60;
-dashCooldown = dashCooldownSet;
+dashCooldown = 0;
 
 dead = false;
-sprite = Spr_PlayerShip;
+sprite = Spr_PlayerFish;
 
 depth = -10
