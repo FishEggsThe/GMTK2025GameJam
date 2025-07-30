@@ -3,7 +3,7 @@ function ResetCheckpoints() {
 		var checkpoint = checkpoints[i];
 		checkpoint.passed = false;
 		checkpoint.mask_index = Msk_Checkpoint;
-		image_blend = c_white;
+		checkpoint.image_blend = c_white;
 	}
 }
 
@@ -20,14 +20,15 @@ function PassedCheckpoint(index) {
 }
 
 function CheckIfNextCheckpoint(checkpoint) {
-	var length = array_length(checkpoints), i;
-	for(i = 0; i < length; i++) {
-		if checkpoints[i] == checkpoint {
-			PassedCheckpoint(i);
-		} else if checkpoints[i].passed != true { return; }
+	with Obj_RaceTrack {
+		var length = array_length(checkpoints);
+		for(var i = 0; i < length; i++) {
+			if checkpoints[i] == checkpoint {
+				PassedCheckpoint(i);
+				if i >= length-1 { CountLap(); }
+			} else if checkpoints[i].passed != true { return; }
+		}
 	}
-	
-	if i >= length-1 { CountLap(); }
 }
 
 function SetupCheckpoints() {

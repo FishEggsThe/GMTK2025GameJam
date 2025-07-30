@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_Checkpoint","path":"objects/Obj_Checkpoint/Obj_Checkpoint.yy",},},
+    {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_Enemy","path":"objects/Obj_Enemy/Obj_Enemy.yy",},},
     {"id":{"name":"Obj_PlayerShip","path":"objects/Obj_PlayerShip/Obj_PlayerShip.yy",},},
     {"id":{"name":"Obj_RaceTrack","path":"objects/Obj_RaceTrack/Obj_RaceTrack.yy",},},

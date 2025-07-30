@@ -35,6 +35,11 @@ LoopAroundScreen();
 maxShipSpeed = lerp(maxShipSpeed, maxSpeed, 0.1);
 if dashCooldown > 0 { dashCooldown--;}
 
+var checkpoint = instance_place(x, y, Obj_Checkpoint);
+if checkpoint != noone {
+	CheckIfNextCheckpoint(checkpoint);
+}
+
 // If you die
 if place_meeting(x, y, Obj_Enemy) || place_meeting(x, y, Obj_RaceTrackWalls) {
 	ShipDies();
