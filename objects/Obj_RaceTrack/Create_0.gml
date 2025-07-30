@@ -1,2 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+timeToLapSet = 60*10;
+timeToLap = timeToLapSet;
+checkpoints = [];
+lapsCompleted = 0;
+SetupCheckpoints();
+show_message(checkpoints);

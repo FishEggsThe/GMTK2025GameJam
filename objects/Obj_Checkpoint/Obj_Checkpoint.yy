@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_RaceTrack",
+  "%Name":"Obj_Checkpoint",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":16,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_RaceTrack",
+  "name":"Obj_Checkpoint",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_RaceTrack",
-    "path":"sprites/Spr_RaceTrack/Spr_RaceTrack.yy",
+    "name":"Msk_Checkpoint",
+    "path":"sprites/Msk_Checkpoint/Msk_Checkpoint.yy",
   },
   "spriteMaskId":null,
   "visible":true,
