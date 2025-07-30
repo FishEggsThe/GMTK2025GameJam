@@ -40,6 +40,14 @@ if checkpoint != noone {
 	CheckIfNextCheckpoint(checkpoint);
 }
 
+// For the Rock enemies
+if dashCooldown > 0 {
+	var possibleRockEnemy = instance_place(x, y, Obj_RockEnemy);
+	if possibleRockEnemy != noone {
+		with possibleRockEnemy { instance_destroy(); }
+	}
+}
+
 // If you die
 if place_meeting(x, y, Obj_Enemy) || place_meeting(x, y, Obj_RaceTrackWalls) {
 	ShipDies();
