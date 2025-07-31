@@ -2,7 +2,7 @@ function ResetCheckpoints() {
 	for(var i = 0; i < array_length(checkpoints); i++) {
 		var checkpoint = checkpoints[i];
 		checkpoint.passed = false;
-		checkpoint.mask_index = Msk_Checkpoint;
+		//checkpoint.mask_index = Msk_Checkpoint;
 		checkpoint.image_blend = c_white;
 	}
 }
@@ -16,7 +16,7 @@ function CountLap() {
 function PassedCheckpoint(index) {
 	var checkpoint = checkpoints[index];
 	checkpoint.passed = true;
-	checkpoint.mask_index = Msk_Empty;
+	//checkpoint.mask_index = Msk_Empty;
 	checkpoint.image_blend = c_green;
 	show_debug_message($"Passed checkpoint {index}");
 }

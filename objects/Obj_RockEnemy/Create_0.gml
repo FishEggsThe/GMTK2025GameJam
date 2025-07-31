@@ -27,7 +27,7 @@ broken = false;
 repairTimeSet = 60*16;
 repairTime = 0;
 
-var angle = irandom_range(0, 270) - 45;
+var angle = GetSpawnAngle();
 var units = [cos(degtorad(angle)), -sin(degtorad(angle))];
 var inner = 180 + 30, outer = inner + 300 - 50;
 var radiusPos = random_range(inner, outer);

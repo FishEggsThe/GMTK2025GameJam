@@ -1,6 +1,6 @@
 event_inherited();
 
-angle = irandom(360);
+angle = GetSpawnAngle();
 
 curve = animcurve_get_channel(AnCv_SpikyEnemyMovement, "curve1");
 percent = 0;

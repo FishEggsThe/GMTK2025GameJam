@@ -1,4 +1,4 @@
 event_inherited();
 
-//speed = 2;
+speed = 2;
 direction = -45;

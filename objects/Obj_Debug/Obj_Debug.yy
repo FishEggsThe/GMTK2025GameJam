@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Checkpoint",
+  "%Name":"Obj_Debug",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":17,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Checkpoint",
+  "name":"Obj_Debug",
   "overriddenProperties":[],
   "parent":{
-    "name":"Race Track",
-    "path":"folders/Objects/Race Track.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Msk_Checkpoint",
-    "path":"sprites/Msk_Checkpoint/Msk_Checkpoint.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

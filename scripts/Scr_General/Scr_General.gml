@@ -17,3 +17,7 @@ function LoopAroundScreen() {
 		y += room_height+offset*2;
 	}
 }
+
+function CheckDebug() {
+	return instance_exists(Obj_Debug) && Obj_Debug.debug;
+}
