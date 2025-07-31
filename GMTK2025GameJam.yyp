@@ -79,6 +79,8 @@
     {"id":{"name":"spr_rock_temp","path":"sprites/spr_rock_temp/spr_rock_temp.yy",},},
     {"id":{"name":"spr_rockBreak_temp","path":"sprites/spr_rockBreak_temp/spr_rockBreak_temp.yy",},},
     {"id":{"name":"Spr_RockEnemy","path":"sprites/Spr_RockEnemy/Spr_RockEnemy.yy",},},
+    {"id":{"name":"spr_spike_temp","path":"sprites/spr_spike_temp/spr_spike_temp.yy",},},
+    {"id":{"name":"spr_spikeEyes_temp","path":"sprites/spr_spikeEyes_temp/spr_spikeEyes_temp.yy",},},
     {"id":{"name":"Spr_SpikyEnemy","path":"sprites/Spr_SpikyEnemy/Spr_SpikyEnemy.yy",},},
   ],
   "resourceType":"GMProject",
