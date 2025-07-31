@@ -1,3 +1,2 @@
 CheckIfDuplicate();
 
-debug = false;

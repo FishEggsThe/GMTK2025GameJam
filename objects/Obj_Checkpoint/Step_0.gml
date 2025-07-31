@@ -1,2 +1,1 @@
-if CheckDebug()
-	image_alpha = !image_alpha;
+image_alpha = CheckDebug();

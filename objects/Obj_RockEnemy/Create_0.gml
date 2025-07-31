@@ -16,6 +16,7 @@ setSprite = function(isBroken) {
 		repairTime = repairTimeSet;
 		sprite = spr_rockBreak_temp;
 		canCollide = false;
+		ShakeScreen(3);
 	} else {
 		repairState = function(){};
 		sprite = spr_rock_temp;

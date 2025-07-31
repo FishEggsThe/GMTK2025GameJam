@@ -21,3 +21,11 @@ function LoopAroundScreen() {
 function CheckDebug() {
 	return instance_exists(Obj_Debug) && Obj_Debug.debug;
 }
+
+function CheckIfDuplicate(inst = id) {
+	if instance_number(inst) > 1 { instance_destroy(); exit; }
+}
+
+function ShakeScreen(amount) {
+	with Obj_Camera { screenShake += amount; }
+}
