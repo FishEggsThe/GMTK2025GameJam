@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_raceCircle",
+    "path":"sprites/spr_raceCircle/spr_raceCircle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

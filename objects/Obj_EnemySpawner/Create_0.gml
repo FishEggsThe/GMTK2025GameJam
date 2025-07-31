@@ -1,4 +1,5 @@
 lapsTilWaveSet = 3;
+waveNum = 0;
 lapsTilWave = lapsTilWaveSet;
 
 enemyPoolEasy = [Obj_FruitLoopEnemy, Obj_SpikyEnemy, Obj_RockEnemy];

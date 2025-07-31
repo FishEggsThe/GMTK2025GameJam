@@ -27,5 +27,6 @@ function IncrementWaveCounter() {
 	if lapsTilWave <= 0 {
 		lapsTilWave = lapsTilWaveSet;
 		SpawnWave();
+		waveNum++;
 	}
 }
