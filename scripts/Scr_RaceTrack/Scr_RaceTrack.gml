@@ -9,6 +9,7 @@ function ResetCheckpoints() {
 
 function CountLap() {
 	lapsCompleted++;
+	timeToLap = timeToLapSet;
 	ResetCheckpoints();
 }
 

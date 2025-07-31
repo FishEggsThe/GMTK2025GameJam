@@ -1,4 +1,4 @@
-timeToLapSet = 60*10;
+timeToLapSet = 60*7;
 timeToLap = timeToLapSet;
 checkpoints = [];
 lapsCompleted = 0;

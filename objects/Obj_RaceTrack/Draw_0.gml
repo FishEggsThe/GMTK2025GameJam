@@ -6,3 +6,4 @@ draw_self()
 //}
 
 draw_text(0, 0, "Score: " + string(lapsCompleted));
+draw_text(0, 20, "Time: " + string(ceil(timeToLap/60)));
