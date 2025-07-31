@@ -17,6 +17,7 @@ setSprite = function(isBroken) {
 		sprite = spr_rockBreak_temp;
 		canCollide = false;
 		ShakeScreen(9);
+		PlaySound(Rock);
 	} else {
 		repairState = function(){};
 		sprite = spr_rock_temp;
@@ -35,3 +36,5 @@ var radiusPos = random_range(inner, outer);
 
 x = room_width/2+units[0]*radiusPos;
 y = room_height/2+units[1]*radiusPos;
+
+depth = 10;

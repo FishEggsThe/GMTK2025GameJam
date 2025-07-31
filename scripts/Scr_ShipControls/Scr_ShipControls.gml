@@ -16,7 +16,7 @@ function ChangeAnimationState(index) {
 	switch(index) {
 		case 1:
 			animationState = dash;
-			sprite = Spr_PlayerDash;
+			sprite = Spr_PlayerDash2;
 			PlaySound(Dash_Fish2);
 			break;
 		case 2:

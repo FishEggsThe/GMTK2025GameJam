@@ -11,6 +11,9 @@ function CountLap() {
 	lapsCompleted++;
 	timeToLap = timeToLapSet;
 	ResetCheckpoints();
+	PlaySound(Lap_2);
+	
+	with Obj_EnemySpawner { IncrementWaveCounter(); }
 }
 
 function PassedCheckpoint(index) {
