@@ -29,3 +29,10 @@ function CheckIfDuplicate(inst = id) {
 function ShakeScreen(amount) {
 	with Obj_Camera { screenShake += amount; }
 }
+
+function PlaySound(sound, pitch = 1) {
+	audio_play_sound(sound, 1, false, 1, 0, pitch);
+}
+function PlayMusic(music, pitch = 1) {
+	audio_play_sound(music, 1, true, 1, 0, pitch);
+}

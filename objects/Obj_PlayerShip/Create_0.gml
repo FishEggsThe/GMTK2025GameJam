@@ -20,7 +20,9 @@ regular = function() {
 }
 dash = function() {
 	var threshold = lerp(maxSpeed, dashSpeed, 0.25);
-	if maxShipSpeed <= threshold { ChangeAnimationState(2); }
+	if maxShipSpeed <= threshold {
+		ChangeAnimationState(2);
+	}
 }
 dashSlow = function() {
 	var threshold = lerp(maxSpeed, dashSpeed, 0.05);

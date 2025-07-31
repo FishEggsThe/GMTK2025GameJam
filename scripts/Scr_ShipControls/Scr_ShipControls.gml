@@ -4,10 +4,12 @@ function AddSpeed(magnitude) {
 }
 
 function ShipDies() {
+	//if dead { return; }
 	dead = true;
 	sprite = Spr_PlayerExplode;
 	shipAngle = 0;
 	ShakeScreen(12);
+	PlaySound(Death__1_);
 }
 
 function ChangeAnimationState(index) {
@@ -15,6 +17,7 @@ function ChangeAnimationState(index) {
 		case 1:
 			animationState = dash;
 			sprite = Spr_PlayerDash;
+			PlaySound(Dash_Fish2);
 			break;
 		case 2:
 			animationState = dashSlow;
@@ -25,6 +28,7 @@ function ChangeAnimationState(index) {
 			sprite = Spr_PlayerUnDash;
 			break;
 		default:
+			PlaySound(Dash_Recharge__2_);
 			animationState = regular;
 			sprite = Spr_PlayerFish;
 	}
