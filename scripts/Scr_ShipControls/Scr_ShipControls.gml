@@ -7,6 +7,7 @@ function ShipDies() {
 	dead = true;
 	sprite = Spr_PlayerExplode;
 	shipAngle = 0;
+	ShakeScreen(12);
 }
 
 function ChangeAnimationState(index) {
