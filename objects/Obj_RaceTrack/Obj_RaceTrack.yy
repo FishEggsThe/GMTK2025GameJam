@@ -9,8 +9,8 @@
   "name":"Obj_RaceTrack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Race Track",
+    "path":"folders/Objects/Race Track.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Spr_RaceTrack",
-    "path":"sprites/Spr_RaceTrack/Spr_RaceTrack.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_RaceTrackWalls",
+  "%Name":"Obj_FinishLine",
   "eventList":[],
   "managed":true,
-  "name":"Obj_RaceTrackWalls",
+  "name":"Obj_FinishLine",
   "overriddenProperties":[],
   "parent":{
     "name":"Race Track",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_RaceBorder",
-    "path":"sprites/Spr_RaceBorder/Spr_RaceBorder.yy",
+    "name":"Spr_RaceLap",
+    "path":"sprites/Spr_RaceLap/Spr_RaceLap.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -2,16 +2,17 @@ if dead { exit; }
 
 // Checking inputs
 var turnSide = keyboard_check(ord("A")) - keyboard_check(ord("D"));
-var accelerate = keyboard_check(ord("W"));
-var dash = keyboard_check_pressed(vk_space);
+var accelerateInput = keyboard_check(ord("W"));
+var dashInput = keyboard_check_pressed(vk_space);
 
-if accelerate {
+if accelerateInput {
 	AddSpeed(acceleration)
 }
 
-if dash && dashCooldown <= 0 {
+if dashInput && dashCooldown <= 0 {
 	dashCooldown = dashCooldownSet;
 	maxShipSpeed = dashSpeed;
+	ChangeAnimationState(1);
 	
 	AddSpeed(dashSpeed);
 }
@@ -39,9 +40,10 @@ var checkpoint = instance_place(x, y, Obj_Checkpoint);
 if checkpoint != noone {
 	CheckIfNextCheckpoint(checkpoint);
 }
+animationState();
 
 // For the Rock enemies
-if dashCooldown > 0 {
+if animationState == dash || animationState == dashSlow {
 	var possibleRockEnemy = instance_place(x, y, Obj_RockEnemy);
 	if possibleRockEnemy != noone {
 		with possibleRockEnemy { instance_destroy(); }
