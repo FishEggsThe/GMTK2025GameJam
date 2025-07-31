@@ -1,8 +1,9 @@
 event_inherited();
 
-percent = percent + increment;
-if percent >= 1 || percent <= 0 { increment = -increment; }
-var position = animcurve_channel_evaluate(curve, percent);
+if !startEnemy { exit; }
+gamePercent = gamePercent + gameIncrement;
+if gamePercent >= 1 || gamePercent <= 0 { gameIncrement = -gameIncrement; }
+var position = animcurve_channel_evaluate(gameCurve, gamePercent);
 
 x = startPos[0] + (distances[0] * position);
 y = startPos[1] + (distances[1] * position);
