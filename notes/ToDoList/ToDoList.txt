@@ -4,3 +4,11 @@ Do this:
 	* Tank that goes around the track
 	* Enemy that follows you
 * Online leaderboards with FireBase
+
+* Add marker for where an enemy will land
+* Ghost is useless
+* Tune dust enemy to slightly vary horizontal speed
+* Mix up unit spawns and limit to probably 3 per wave
+* Fix the rock because it kinda wonky right now
+* Let you know when the rock is about to repair
+* Make lap timer decrease per wave and stuff

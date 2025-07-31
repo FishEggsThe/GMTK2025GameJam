@@ -1,2 +1,3 @@
 CheckIfDuplicate();
 
+inGhostGauntlet = false;

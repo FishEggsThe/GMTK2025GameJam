@@ -3,9 +3,8 @@ event_inherited();
 repairState = function(){};
 repair = function() {
 	repairTime--;
-	if repairTime <= 0 {
-		setSprite(false);
-	}
+	if repairTime < repairTimeSet*0.15 { image_blend = c_red; }
+	if repairTime <= 0 { setSprite(false); }
 }
 
 sprite = spr_rock_temp;
@@ -22,6 +21,7 @@ setSprite = function(isBroken) {
 		repairState = function(){};
 		sprite = spr_rock_temp;
 		canCollide = true;
+		image_blend = c_white;
 	}
 }
 
