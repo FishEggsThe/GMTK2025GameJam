@@ -9,6 +9,9 @@ if !startEnemy {
 	x = room_width/2 + (percent * xDistance);
 	y = room_height/2 + (percent * yDistance - yPosition);
 	
-	if percent >= 1 { startEnemy = true; }
+	if percent >= 1 {
+		startEnemy = true;
+		canCollide = true;
+	}
 	exit;
 }

@@ -2,6 +2,8 @@ event_inherited();
 
 angle = GetSpawnAngle();
 
+sprite = spr_spike_temp;
+
 curve = animcurve_get_channel(AnCv_SpikyEnemyMovement, "curve1");
 percent = 0;
 increment = 1/80;

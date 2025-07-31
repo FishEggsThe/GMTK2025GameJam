@@ -1,1 +1,5 @@
-draw_sprite(sprite, 0, x, y);
+event_inherited();
+
+if CheckDebug() {
+	draw_text(x, y, repairTime);
+}

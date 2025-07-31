@@ -17,7 +17,9 @@ function SpawnEnemy(enemyPool = enemyPoolEasy, index = 0) {
 }
 
 function SpawnWave() {
-	SpawnEnemy();
+	SpawnEnemy(enemyPoolEasy, 0);
+	SpawnEnemy(enemyPoolEasy, 1);
+	SpawnEnemy(enemyPoolEasy, 2);
 }
 
 function IncrementWaveCounter() {

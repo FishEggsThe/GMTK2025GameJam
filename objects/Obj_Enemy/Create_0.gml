@@ -1,6 +1,8 @@
-canCollide = true;
+canCollide = false;
 startEnemy = false;
 xLandingPos = 0; yLandingPos = 0;
+
+sprite = Spr_FruitLoopEnemy;
 
 GetSpawnPosition();
 

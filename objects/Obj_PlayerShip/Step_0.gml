@@ -7,6 +7,12 @@ var dashInput = keyboard_check_pressed(vk_space);
 
 if accelerateInput {
 	AddSpeed(acceleration)
+	engineTimer--;
+	if engineTimer <= 0 {
+		engineTimer = engineTimerSet;
+		var speedPitch = point_distance(x, y, x+xSpeed, y-ySpeed)/maxSpeed;
+		PlaySound(Engine_LOOPLESS_WIP, speedPitch);
+	}
 }
 
 if dashInput && dashCooldown <= 0 {

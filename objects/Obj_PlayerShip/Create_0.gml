@@ -33,4 +33,7 @@ dashStopped = function() {
 }
 animationState = regular;
 
+engineTimerSet = 4;
+engineTimer = engineTimerSet;
+
 depth = -10

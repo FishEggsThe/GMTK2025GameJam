@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Race_WIP1",
+  "%Name":"Engine_LOOPLESS_WIP",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":19.504763,
-  "name":"Race_WIP1",
+  "duration":1.056508,
+  "name":"Engine_LOOPLESS_WIP",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Race_WIP1.mp3",
+  "soundFile":"Engine_LOOPLESS_WIP.mp3",
   "type":0,
-  "volume":0.75,
+  "volume":0.18,
 }
