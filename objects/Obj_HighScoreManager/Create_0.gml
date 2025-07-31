@@ -5,7 +5,7 @@ depth = -15;
 //highScores = [];
 
 ifUsing = true;
-showScores = true;
+showScores = false;
 
 root = dotEnv_get("COLLECTION");
 listener = ifUsing ? FirebaseFirestore(root).Listener() : -1;

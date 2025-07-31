@@ -1,7 +1,6 @@
 Do this:
 * Make the rest of the enemies
 	* Tank that goes around the track
-* Online leaderboards with FireBase
 
 * Ghost is useless
 * Mix up unit spawns and limit to probably 3 per wave
