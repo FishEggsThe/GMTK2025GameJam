@@ -51,7 +51,7 @@ animationState();
 // For the Rock enemies
 if animationState == dash || animationState == dashSlow {
 	var possibleRockEnemy = instance_place(x, y, Obj_RockEnemy);
-	if possibleRockEnemy != noone && !possibleRockEnemy.broken {
+	if possibleRockEnemy != noone && possibleRockEnemy.canCollide {
 		with possibleRockEnemy { setSprite(true); }
 	}
 }

@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Race Track",
-    "path":"folders/Sprites/Race Track.yy",
+    "name":"The Face",
+    "path":"folders/Sprites/Race Track/The Face.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

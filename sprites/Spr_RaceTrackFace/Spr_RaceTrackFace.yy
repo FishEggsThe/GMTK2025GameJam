@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Spr_RaceTrackFace",
   "bboxMode":0,
-  "bbox_bottom":240,
+  "bbox_bottom":227,
   "bbox_left":5,
   "bbox_right":264,
   "bbox_top":56,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4a746f8c-18cb-463b-94a7-4a8d44573258","name":"4a746f8c-18cb-463b-94a7-4a8d44573258","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d54fab17-c20d-4bf9-aab6-194a1b493f94","name":"d54fab17-c20d-4bf9-aab6-194a1b493f94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":270,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"319745bb-0296-46c3-91a3-c1cf4b2aebbe","blendMode":0,"displayName":"default","isLocked":false,"name":"319745bb-0296-46c3-91a3-c1cf4b2aebbe","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"504e61ae-ca3e-4f1e-ba6d-1a9f2e4bb004","blendMode":0,"displayName":"default","isLocked":false,"name":"504e61ae-ca3e-4f1e-ba6d-1a9f2e4bb004","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Spr_RaceTrackFace",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Race Track",
-    "path":"folders/Sprites/Race Track.yy",
+    "name":"The Face",
+    "path":"folders/Sprites/Race Track/The Face.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4a746f8c-18cb-463b-94a7-4a8d44573258","path":"sprites/Spr_RaceTrackFace/Spr_RaceTrackFace.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"83f2baaf-d0cf-4b73-8132-5806c7cc0eaa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d54fab17-c20d-4bf9-aab6-194a1b493f94","path":"sprites/Spr_RaceTrackFace/Spr_RaceTrackFace.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4b9c934a-052a-41f3-9d89-92a85e355851","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
