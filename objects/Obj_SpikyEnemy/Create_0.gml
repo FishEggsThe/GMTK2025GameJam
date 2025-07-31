@@ -4,7 +4,7 @@ angle = irandom(360);
 
 curve = animcurve_get_channel(AnCv_SpikyEnemyMovement, "curve1");
 percent = 0;
-increment = 1/60;
+increment = 1/80;
 
 var units = [cos(degtorad(angle)), -sin(degtorad(angle))];
 var inner = 180 + 30, outer = inner+300 - 50;

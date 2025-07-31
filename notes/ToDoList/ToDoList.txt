@@ -1,8 +1,6 @@
 Do this:
 * Create enemy spawner
 * Make the rest of the enemies
-	* Bouncy off walls enemy
 	* Tank that goes around the track
-	* Rock
 	* Enemy that follows you
 * Online leaderboards with FireBase

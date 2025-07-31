@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_FruitLoopEnemy",
-    "path":"sprites/Spr_FruitLoopEnemy/Spr_FruitLoopEnemy.yy",
+    "name":"spr_dust_temp",
+    "path":"sprites/spr_dust_temp/spr_dust_temp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

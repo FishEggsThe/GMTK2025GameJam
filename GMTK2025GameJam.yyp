@@ -59,6 +59,7 @@
     {"id":{"name":"Scr_ShipControls","path":"scripts/Scr_ShipControls/Scr_ShipControls.yy",},},
     {"id":{"name":"Msk_Checkpoint","path":"sprites/Msk_Checkpoint/Msk_Checkpoint.yy",},},
     {"id":{"name":"Spr_Background","path":"sprites/Spr_Background/Spr_Background.yy",},},
+    {"id":{"name":"spr_dust_temp","path":"sprites/spr_dust_temp/spr_dust_temp.yy",},},
     {"id":{"name":"Spr_FruitLoopEnemy","path":"sprites/Spr_FruitLoopEnemy/Spr_FruitLoopEnemy.yy",},},
     {"id":{"name":"Spr_PlayerDash_Unstretched","path":"sprites/Spr_PlayerDash_Unstretched/Spr_PlayerDash_Unstretched.yy",},},
     {"id":{"name":"Spr_PlayerDash","path":"sprites/Spr_PlayerDash/Spr_PlayerDash.yy",},},
