@@ -17,9 +17,11 @@ function SpawnEnemy(enemyPool = enemyPoolEasy, index = 0) {
 }
 
 function SpawnWave() {
-	SpawnEnemy(enemyPoolEasy, 0);
-	SpawnEnemy(enemyPoolEasy, 1);
-	SpawnEnemy(enemyPoolEasy, 2);
+	//SpawnEnemy(enemyPoolEasy, 0);
+	//SpawnEnemy(enemyPoolEasy, 1);
+	//SpawnEnemy(enemyPoolEasy, 2);
+	repeat(10)
+		SpawnEnemy(enemyPoolHard, 0);
 }
 
 function IncrementWaveCounter() {
