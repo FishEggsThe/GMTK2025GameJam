@@ -1,6 +1,6 @@
 event_inherited();
 
-percent = percent + increment;
+//percent = percent + increment;
 if percent >= 1 || percent <= 0 { increment = -increment; }
 var position = animcurve_channel_evaluate(curve, percent);
 

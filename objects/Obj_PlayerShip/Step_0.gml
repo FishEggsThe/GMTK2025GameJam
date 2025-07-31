@@ -45,12 +45,13 @@ animationState();
 // For the Rock enemies
 if animationState == dash || animationState == dashSlow {
 	var possibleRockEnemy = instance_place(x, y, Obj_RockEnemy);
-	if possibleRockEnemy != noone {
-		with possibleRockEnemy { instance_destroy(); }
+	if possibleRockEnemy != noone && !possibleRockEnemy.broken {
+		with possibleRockEnemy { setSprite(true); }
 	}
 }
 
 // If you die
-if place_meeting(x, y, Obj_Enemy) || place_meeting(x, y, Obj_RaceTrackWalls) {
+var possibleEnemy = instance_place(x, y, Obj_Enemy)
+if (possibleEnemy != noone && possibleEnemy.canCollide) || place_meeting(x, y, Obj_RaceTrackWalls) {
 	ShipDies();
 }

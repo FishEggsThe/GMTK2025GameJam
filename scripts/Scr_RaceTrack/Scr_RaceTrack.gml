@@ -16,8 +16,9 @@ function CountLap() {
 function PassedCheckpoint(index) {
 	var checkpoint = checkpoints[index];
 	checkpoint.passed = true;
-	checkpoint.mask_index = -1;
+	checkpoint.mask_index = Msk_Empty;
 	checkpoint.image_blend = c_green;
+	show_debug_message($"Passed checkpoint {index}");
 }
 
 function CheckIfNextCheckpoint(checkpoint) {

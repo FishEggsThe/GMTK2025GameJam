@@ -1,7 +1,33 @@
 event_inherited();
 
-var angle = irandom_range(0, 270) - 45;
+repairState = function(){};
+repair = function() {
+	repairTime--;
+	if repairTime <= 0 {
+		setSprite(false);
+	}
+}
 
+sprite = spr_rock_temp;
+setSprite = function(isBroken) {
+	broken = isBroken;
+	if isBroken {
+		repairState = repair;
+		repairTime = repairTimeSet;
+		sprite = spr_rockBreak_temp;
+		canCollide = false;
+	} else {
+		repairState = function(){};
+		sprite = spr_rock_temp;
+		canCollide = false;
+	}
+}
+
+broken = false;
+repairTimeSet = 60*16;
+repairTime = 0;
+
+var angle = irandom_range(0, 270) - 45;
 var units = [cos(degtorad(angle)), -sin(degtorad(angle))];
 var inner = 180 + 30, outer = inner + 300 - 50;
 var radiusPos = random_range(inner, outer);
