@@ -1,3 +1,3 @@
 CheckIfDuplicate();
 
-currentMusic = noone;
+currentMusic = Beep_beep_beep_GO;
