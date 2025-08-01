@@ -5,5 +5,5 @@ if !startEnemy {
 	markerImageIndex = (markerImageIndex + 12/60) % markerFrames;
 }
 
-DrawSprite(sprite, image_index, x+xShake, y+yShake, 
-				image_xscale, image_yscale, 0, image_blend, alpha);
+DrawSprite(sprite, spriteImageIndex, x+xShake, y+yShake, 
+				image_xscale, image_yscale, 0, spriteImageBlend, alpha);

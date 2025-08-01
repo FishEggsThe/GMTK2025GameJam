@@ -38,7 +38,7 @@ part_type_speed(global.partConfettiR,3,8,-0.05,0);
 part_type_gravity(global.partConfettiR,0.15,-90);
 part_type_sprite(global.partConfettiR,Spr_Confetti,false,false,true);
 // confetti that goes to the left
-part_type_direction(global.partConfettiL,135,90,0,0);
+part_type_direction(global.partConfettiL,90,135,0,0);
 part_type_orientation(global.partConfettiL,0,359,2,0,0);
 part_type_size(global.partConfettiL,0.5,1,-0.01,0);
 part_type_speed(global.partConfettiL,3,8,-0.05,0);
@@ -52,7 +52,7 @@ part_type_speed(global.partTrailDust,0.5,0.5,0,0);
 part_type_sprite(global.partTrailDust,Spr_DustMite,false,false,true);
 
 // the ghost enemy's trail
-part_type_size(global.partTrailGhost,1,1,-0.034,0);
+part_type_size(global.partTrailGhost,1.2,1.2,-0.075,0);
 part_type_sprite(global.partTrailGhost,Spr_Circle,false,false,false);
 
 bubbles = function(_x, _y) {

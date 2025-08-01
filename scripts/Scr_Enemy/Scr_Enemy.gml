@@ -25,10 +25,10 @@ function SpawnMine(_x, _y) {
 }
 
 function SpawnWave() {
-	//SpawnEnemy(enemyPoolEasy, 0);
+	SpawnEnemy(enemyPoolEasy, 0);
 	//SpawnEnemy(enemyPoolEasy, 1);
 	//SpawnEnemy(enemyPoolEasy, 2);
-	//SpawnEnemy(enemyPoolHard, 0);
+	SpawnEnemy(enemyPoolHard, 0);
 	SpawnEnemy(enemyPoolHard, 1);
 	
 	//repeat(10)

@@ -8,6 +8,8 @@ yLandingPos = Obj_PlayerShip.y;
 playerPath = ds_queue_create();
 pathDelay = 30 + 45*instance_number(object_index);
 alarm[0] = pathDelay;
+trailDelay = 4
+alarm[1] = trailDelay;
 
 ghostPath = function() {
 	ds_queue_enqueue(playerPath, [Obj_PlayerShip.x, Obj_PlayerShip.y]);

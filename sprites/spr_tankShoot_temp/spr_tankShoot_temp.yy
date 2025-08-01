@@ -27,7 +27,7 @@
   ],
   "name":"spr_tankShoot_temp",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Enemies",
     "path":"folders/Sprites/Enemies.yy",
@@ -94,7 +94,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":192,
+    "yorigin":171,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

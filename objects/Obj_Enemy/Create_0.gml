@@ -5,7 +5,8 @@ xLandingPos = 0; yLandingPos = 0;
 GetSpawnPosition();
 
 sprite = Spr_FruitLoopEnemy;
-image_alpha = c_white;
+spriteImageIndex = 0;
+spriteImageBlend = c_white;
 
 percent = 0;
 curve = animcurve_get_channel(AnCv_EnemySpawnJump, "curve1");
@@ -20,3 +21,5 @@ setShake = function(amount = enemyShake) {
 
 markerFrames = sprite_get_number(Spr_EnemyLandMarker);
 markerImageIndex = irandom(markerFrames);
+
+trailDelay = 0;
