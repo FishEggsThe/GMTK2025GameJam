@@ -29,8 +29,8 @@ function CountLap() {
 	with Obj_EnemySpawner { IncrementWaveCounter(); }
 	with Obj_ShooterEnemy { canShoot = true; }
 	
-	part_particles_create(global.partSystem,0,room_height,global.partConfettiR,15);
-	part_particles_create(global.partSystem,room_width,room_height,global.partConfettiL,15);
+	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiL,15);
+	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiR,15);
 }
 
 function PassedCheckpoint(index) {
