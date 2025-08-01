@@ -34,6 +34,8 @@ dashStopped = function() {
 	if maxShipSpeed <= maxSpeed+0.01 { ChangeAnimationState(0); }
 }
 animationState = regular;
+bubbleTimerCap = 6;
+bubbleTimer = 0;
 
 engineTimerSet = 4;
 engineTimer = engineTimerSet;

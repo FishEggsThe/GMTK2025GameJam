@@ -11,9 +11,18 @@ function ReadInputs() {
 			var speedPitch = point_distance(x, y, x+xSpeed, y-ySpeed)/maxSpeed;
 			PlaySound(Engine_LOOPLESS_WIP, speedPitch);
 		}
-	
-		if current_time % 6 == 0 {
-			Obj_ParticleManager.bubbles(x, y);
+		
+		bubbleTimer++;
+		if bubbleTimer % bubbleTimerCap == 0 {
+			bubbleTimer -= bubbleTimerCap;
+			var shipBehindRadian = degtorad(shipAngle+180);
+			var shipBehindOffset = 18;
+			var xPos = x + shipBehindOffset*cos(shipBehindRadian);
+			var yPos = y - shipBehindOffset*sin(shipBehindRadian);
+			Obj_ParticleManager.bubbles(xPos, yPos);
+			if dashCooldown <= 0 {
+				Obj_ParticleManager.bubbleDashReady(xPos, yPos);
+			}
 		}
 	}
 
@@ -45,9 +54,9 @@ function ApplyInputs() {
 	maxShipSpeed = lerp(maxShipSpeed, maxSpeed, 0.1);
 	if dashCooldown > 0 {
 		dashCooldown--;
-		if dashCooldown <= 0 {
-			Obj_ParticleManager.bubbleDashReady(x, y);
-		}
+		//if dashCooldown <= 0 {
+		//	Obj_ParticleManager.bubbleDashReady(x, y);
+		//}
 	}
 
 	var checkpoint = instance_place(x, y, Obj_Checkpoint);
