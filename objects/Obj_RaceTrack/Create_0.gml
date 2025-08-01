@@ -6,9 +6,10 @@ lapsCompleted = 0;
 SetupCheckpoints();
 
 // Faces
+faceImageIndex = 0;
 staring = function() {
 	var xEyePos = x + 20*lengthdir_x(1,point_direction(x, y, Obj_PlayerShip.x, Obj_PlayerShip.y));
-	var yEyePos = y + 20*clamp(lengthdir_y(1,point_direction(x, y, Obj_PlayerShip.x, Obj_PlayerShip.y)), -1, 0.2);
+	var yEyePos = y + 20*lengthdir_y(1,point_direction(x, y, Obj_PlayerShip.x, Obj_PlayerShip.y));
 	DrawSprite(Spr_RaceTrackEye, 0, xEyePos-56, yEyePos-30);
 	DrawSprite(Spr_RaceTrackEye, 0, xEyePos+56, yEyePos-30);
 
@@ -16,7 +17,8 @@ staring = function() {
 
 }
 laughing = function() {
-	
+	faceImageIndex = (faceImageIndex+1) & 2;
+	DrawSprite(Spr_RaceTrackFaceLaughing, faceImageIndex, x, y);
 }
 
 faceState = staring;

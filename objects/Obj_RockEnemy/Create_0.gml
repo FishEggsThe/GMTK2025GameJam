@@ -19,7 +19,7 @@ setSprite = function(isBroken) {
 		sprite = spr_rockBreak_temp;
 		canCollide = false;
 		ShakeScreen(9);
-		PlaySound(Rock);
+		PlaySound(Rock_Attempt_2);
 	} else {
 		repairState = function(){};
 		sprite = spr_rock_temp;

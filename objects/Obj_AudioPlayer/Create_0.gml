@@ -1,3 +1,3 @@
 CheckIfDuplicate();
 
-currentMusic = Lap;
+currentMusic = noone;

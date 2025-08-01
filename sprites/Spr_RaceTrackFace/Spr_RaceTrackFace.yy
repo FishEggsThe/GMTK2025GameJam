@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"The Face",
-    "path":"folders/Sprites/Race Track/The Face.yy",
+    "name":"Staring",
+    "path":"folders/Sprites/Race Track/The Face/Staring.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

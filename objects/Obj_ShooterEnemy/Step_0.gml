@@ -17,7 +17,7 @@ if canShoot && collision_line(x, y, room_width/2, room_height/2, Obj_PlayerShip,
 
 if animateShooting {
 	spriteImageIndex+=6/60;
-	if spriteImageIndex % 5 < spriteImageIndex {
+	if spriteImageIndex >= 5 {
 		spriteImageIndex = 0;
 		animateShooting = false;
 		sprite = spr_tank_temp;

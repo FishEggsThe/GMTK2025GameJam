@@ -8,7 +8,7 @@ function StartRace() {
 	with Obj_EnemySpawner { SpawnWave(); }
 	Obj_Control.playGameIntro = false;
 	startTimer = true;
-	PlayMusic(Raaacist_p1);
+	PlayMusic(dddddd);
 }
 
 function ResetCheckpoints() {
