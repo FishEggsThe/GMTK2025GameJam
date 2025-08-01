@@ -13,6 +13,8 @@ if accelerateInput {
 		var speedPitch = point_distance(x, y, x+xSpeed, y-ySpeed)/maxSpeed;
 		PlaySound(Engine_LOOPLESS_WIP, speedPitch);
 	}
+	Obj_ParticleManager.bubblesParticles(x, y);
+	//Obj_ParticleManager.fireParticles(x, y);
 }
 
 if dashInput && dashCooldown <= 0 {
