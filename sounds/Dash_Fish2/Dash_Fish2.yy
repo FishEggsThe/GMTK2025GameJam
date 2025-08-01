@@ -12,8 +12,8 @@
   "duration":2.285737,
   "name":"Dash_Fish2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Ship",
+    "path":"folders/Sounds/Sound Effects/Player Ship.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

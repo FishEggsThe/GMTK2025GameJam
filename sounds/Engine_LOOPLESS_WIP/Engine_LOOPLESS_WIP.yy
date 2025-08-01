@@ -12,8 +12,8 @@
   "duration":1.056508,
   "name":"Engine_LOOPLESS_WIP",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Ship",
+    "path":"folders/Sounds/Sound Effects/Player Ship.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

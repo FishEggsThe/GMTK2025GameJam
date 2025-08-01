@@ -1,5 +1,3 @@
 CheckIfDuplicate();
 
-currentMusic = Race_WIP1
-
-PlayMusic(currentMusic);
+currentMusic = Raaacist_p1;

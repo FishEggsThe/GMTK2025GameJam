@@ -12,8 +12,8 @@
   "duration":3.2,
   "name":"Dash_Recharge__2_",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Ship",
+    "path":"folders/Sounds/Sound Effects/Player Ship.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

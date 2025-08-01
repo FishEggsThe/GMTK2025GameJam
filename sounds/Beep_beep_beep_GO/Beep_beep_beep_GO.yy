@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Beep_beep_beep_GO",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.0476418,
+  "name":"Beep_beep_beep_GO",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Beep_beep_beep_GO.mp3",
+  "type":0,
+  "volume":1.0,
+}

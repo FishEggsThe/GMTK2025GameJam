@@ -22,7 +22,7 @@ switch(type){
 
 	// darker blue
 	case 3:
-		image_blend = #0098DB;
+		image_blend = #FFFFFF;
 		angleVar = 90;
 		image_xscale = random_range(0.9,1.2);
 		image_yscale = random_range(0.4,0.75);

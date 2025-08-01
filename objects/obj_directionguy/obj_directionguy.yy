@@ -12,8 +12,8 @@
   "name":"obj_directionguy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Particles",
-    "path":"folders/Objects/Particles.yy",
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
   },
   "parentObjectId":null,
   "persistent":false,

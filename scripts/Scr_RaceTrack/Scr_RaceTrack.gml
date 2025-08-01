@@ -1,3 +1,16 @@
+function StartIntro() {
+	PlaySound(Beep_beep_beep_GO);
+	alarm[0] = audio_sound_length(Beep_beep_beep_GO)*60;
+	startTimer = false;
+}
+function StartRace() {
+	with Obj_PlayerShip { moveState = moving; }
+	with Obj_EnemySpawner { SpawnWave(); }
+	Obj_Control.playGameIntro = false;
+	startTimer = true;
+	PlayMusic(Raaacist_p1);
+}
+
 function ResetCheckpoints() {
 	for(var i = 0; i < array_length(checkpoints); i++) {
 		var checkpoint = checkpoints[i];

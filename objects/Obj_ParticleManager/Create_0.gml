@@ -55,7 +55,7 @@ part_type_sprite(global.partTrailDust,Spr_DustMite,false,false,true);
 part_type_size(global.partTrailGhost,1,1,-0.034,0);
 part_type_sprite(global.partTrailGhost,Spr_Circle,false,false,false);
 
-bubblesParticles = function(_x, _y) {
+bubbles = function(_x, _y) {
 	for(var i = -2; i < 1; i++){
 		if(i != 0){
 			with(instance_create_layer(_x,_y,"Particles",Obj_TrailBubble)){
@@ -63,12 +63,14 @@ bubblesParticles = function(_x, _y) {
 			}
 		}
 	}
-
-	//// this one spawns at a fixed rate
+}
+bubbleDashReady = function(_x, _y) {
 	with(instance_create_layer(_x,_y,"Particles",Obj_TrailBubble)){
 		image_index = 1;
 	}
 }
-fireParticles = function(_x, _y) {
-	instance_create_layer(_x,_y,"Particles",Obj_FireDash)
+fireDash = function(_x, _y) {
+	repeat(irandom_range(15, 20)) {
+		instance_create_layer(_x,_y,"Particles",Obj_FireDash)
+	}
 }

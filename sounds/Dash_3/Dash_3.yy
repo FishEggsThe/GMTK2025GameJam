@@ -12,8 +12,8 @@
   "duration":2.0,
   "name":"Dash_3",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Ship",
+    "path":"folders/Sounds/Sound Effects/Player Ship.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

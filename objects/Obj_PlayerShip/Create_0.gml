@@ -1,3 +1,5 @@
+CheckIfDuplicate();
+
 xSpeed = 0;
 ySpeed = 0;
 
@@ -35,5 +37,11 @@ animationState = regular;
 
 engineTimerSet = 4;
 engineTimer = engineTimerSet;
+
+moveState = function(){};
+moving = function() {
+	ReadInputs();
+	ApplyInputs();
+}
 
 depth = -10

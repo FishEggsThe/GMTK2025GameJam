@@ -16,3 +16,6 @@ setShake = function(amount = enemyShake) {
 	xShake = random_range(-amount, amount);
 	yShake = random_range(-amount, amount);
 }
+
+markerFrames = sprite_get_number(Spr_EnemyLandMarker);
+markerImageIndex = irandom(markerFrames);

@@ -12,8 +12,8 @@
   "duration":3.2,
   "name":"Rock",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Enemies",
+    "path":"folders/Sounds/Sound Effects/Enemies.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -123,7 +123,8 @@ function __firebase_firestore_flatten_struct_paths(_struct, _parent_key = "") {
 		
 		var _value = _struct[$ _key];
 		if (is_struct(_value)) {
-			var _nested_keys = __firebase_firestore_flatten_struct_paths(_value, _new_key);
+			var _nested_keys = []; // Waack ass errors
+			_nested_keys = __firebase_firestore_flatten_struct_paths(_value, _new_key);
 			var _nested_keys_count = array_length(_nested_keys);
 			array_copy(_paths, _paths_count, _nested_keys, 0, _nested_keys_count);
 			_paths_count += _nested_keys_count;
