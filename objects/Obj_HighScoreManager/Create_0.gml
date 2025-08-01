@@ -17,6 +17,6 @@ sort_score = function(_a, _b) {
 
 addScoreFirebase = function(p, n) {
 	data = [];
-	var doc = json_stringify(InitializeScore(p, n));
+	var doc = json_stringify(InitializeScore(p, $"{n}{irandom(100)}"));
 	FirebaseFirestore(root).Set(doc);
 }
