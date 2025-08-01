@@ -2,10 +2,10 @@ function GetSpawnAngle() {
 	return irandom_range(0, 315) - 45*3/2;
 }
 
-function GetSpawnPosition() {
+function GetSpawnPosition(constrict = 0) {
 	var angle = GetSpawnAngle();
 	var units = [cos(degtorad(angle)), -sin(degtorad(angle))];
-	var inner = 180 + 30, outer = inner + 300 - 50;
+	var inner = 180 + 45, outer = inner + 300 - 35;
 	var radiusPos = random_range(inner, outer);
 	
 	xLandingPos = room_width/2+units[0]*radiusPos;
@@ -31,8 +31,21 @@ function SpawnWave() {
 	SpawnEnemy(enemyPoolHard, 0);
 	SpawnEnemy(enemyPoolHard, 1);
 	
-	//repeat(10)
-	//	SpawnEnemy(enemyPoolHard, 0);
+	// Gauntlet numbers
+	//repeat(10) {
+		//SpawnEnemy(enemyPoolEasy, 0);
+		//SpawnEnemy(enemyPoolEasy, 1);
+		//SpawnEnemy(enemyPoolEasy, 2);
+		//SpawnEnemy(enemyPoolHard, 0);
+		//SpawnEnemy(enemyPoolHard, 1);
+	//}
+}
+function SpawnFirstWave() {
+	SpawnEnemy(enemyPoolEasy, 0);
+	SpawnEnemy(enemyPoolEasy, 1);
+	SpawnEnemy(enemyPoolEasy, 2);
+	SpawnEnemy(enemyPoolHard, 0);
+	SpawnEnemy(enemyPoolHard, 1);
 }
 
 function IncrementWaveCounter() {

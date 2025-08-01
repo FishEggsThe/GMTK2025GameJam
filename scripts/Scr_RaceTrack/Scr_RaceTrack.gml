@@ -5,7 +5,7 @@ function StartIntro() {
 }
 function StartRace() {
 	with Obj_PlayerShip { moveState = moving; }
-	with Obj_EnemySpawner { SpawnWave(); }
+	with Obj_EnemySpawner { SpawnFirstWave(); }
 	Obj_Control.playGameIntro = false;
 	startTimer = true;
 	PlayMusic(dddddd);
