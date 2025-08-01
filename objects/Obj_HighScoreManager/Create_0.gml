@@ -4,7 +4,7 @@ depth = -15;
 //numOfHighScores = 0;
 //highScores = [];
 
-ifUsing = true;
+ifUsing = false;
 showScores = false;
 
 root = dotEnv_get("COLLECTION");

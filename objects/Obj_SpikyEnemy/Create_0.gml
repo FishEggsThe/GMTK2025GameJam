@@ -1,9 +1,9 @@
 event_inherited();
 
-angle = GetSpawnAngle();
 
 sprite = spr_spike_temp;
 
+var angle = point_direction(room_width/2, room_height/2, xLandingPos, yLandingPos)
 var units = [cos(degtorad(angle)), -sin(degtorad(angle))];
 var inner = 180 + 30, outer = inner + 300 - 50;
 startPos = [room_width/2+units[0]*inner, room_height/2+units[1]*inner];

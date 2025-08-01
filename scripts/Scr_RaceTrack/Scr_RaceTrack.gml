@@ -27,6 +27,7 @@ function CountLap() {
 	PlaySound(Lap_2);
 	
 	with Obj_EnemySpawner { IncrementWaveCounter(); }
+	with Obj_ShooterEnemy { canShoot = true; }
 }
 
 function PassedCheckpoint(index) {
