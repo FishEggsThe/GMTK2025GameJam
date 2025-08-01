@@ -10,8 +10,8 @@
   "name":"Obj_BattleBackground",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle",
-    "path":"folders/Objects/Battle.yy",
+    "name":"Funky Background",
+    "path":"folders/Objects/Funky Background.yy",
   },
   "parentObjectId":null,
   "persistent":false,

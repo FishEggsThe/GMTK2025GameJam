@@ -20,5 +20,5 @@ DrawSprite(spr_raceCircleScreen, 0, x, y);
 //	draw_text(checkpoint.x, checkpoint.y, i);
 //}
 
-DrawText(0, 0, "Score: " + string(lapsCompleted), fa_left, fa_top);
-DrawText(0, 20, "Time: " + string(intTime), fa_left, fa_top);
+DrawText(0, 0, "Score: " + string(lapsCompleted), fa_left, fa_top, c_white, 2, 2);
+DrawText(0, 20, "Time: " + string(intTime), fa_left, fa_top, c_white, 2, 2);

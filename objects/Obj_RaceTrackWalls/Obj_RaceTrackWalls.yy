@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_raceBorder_outlineOnly",
-    "path":"sprites/spr_raceBorder_outlineOnly/spr_raceBorder_outlineOnly.yy",
+    "name":"Spr_RaceBorder39",
+    "path":"sprites/Spr_RaceBorder39/Spr_RaceBorder39.yy",
   },
   "spriteMaskId":null,
   "visible":true,

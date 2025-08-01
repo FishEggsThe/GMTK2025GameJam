@@ -2,8 +2,8 @@ CheckIfDuplicate();
 
 x = 0; y = 0
 	
-view_width = 640*2;
-view_height = 480*2;
+view_width = 1280+100;
+view_height = 960+100;
 window_scale = 1;
 
 window_set_size(view_width*window_scale, view_height*window_scale);
