@@ -9,7 +9,7 @@ function DrawText(_x, _y, _string, _halign, _valign, _color=c_black, _xscale=1, 
 }
 
 function LoopAroundScreen() {
-	var offset = 16;
+	var offset = 116;
 
 	if x > room_width+offset {
 		x -= room_width+offset*2;

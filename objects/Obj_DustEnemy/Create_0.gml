@@ -1,7 +1,7 @@
 event_inherited();
 
 speed = 2;
-direction = -45 + random_range(-20, 20);
+direction = -45 + random_range(-20, 25);
 
 sprite = spr_dust_temp;
 

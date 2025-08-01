@@ -3,7 +3,7 @@
   "%Name":"Spr_PlayerFish",
   "bboxMode":2,
   "bbox_bottom":22,
-  "bbox_left":10,
+  "bbox_left":8,
   "bbox_right":35,
   "bbox_top":9,
   "collisionKind":1,
