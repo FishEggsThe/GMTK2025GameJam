@@ -1,7 +1,12 @@
 function ReadInputs() {
 	var turnSide = InputCheck(INPUT_VERB.LEFT) - InputCheck(INPUT_VERB.RIGHT);
-	var accelerateInput = InputCheck(INPUT_VERB.UP);
+	var accelerateInput = InputCheck(INPUT_VERB.ACCEL);
 	var dashInput = InputPressed(INPUT_VERB.DASH);
+	if Obj_Control.singleButton {
+		var checkForSingle = accelerateInput || dashInput;
+		accelerateInput = checkForSingle;
+		dashInput = checkForSingle;
+	}
 
 	if accelerateInput {
 		AddSpeed(acceleration)

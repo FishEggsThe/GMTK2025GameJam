@@ -2,7 +2,8 @@ CheckIfDuplicate();
 
 playerName = "Jeff";
 playGameIntro = true;
-leftHanded = false;
+
+singleButton = false;
 
 inGhostGauntlet = false;
 
