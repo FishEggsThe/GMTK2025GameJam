@@ -5,3 +5,4 @@ Do this:
 * Make Shooter Mines appear from sky instead of low arcing bounce
 * Ghost should flash before dash
 * Do text where the text is sprites
+* Fullscreen option in options

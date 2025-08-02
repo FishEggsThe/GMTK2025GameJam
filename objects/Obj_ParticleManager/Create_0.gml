@@ -34,14 +34,14 @@ global.partTrailGhost = part_type_create();
 part_type_direction(global.partConfettiR,45,90,0,0);
 part_type_orientation(global.partConfettiR,0,359,-2,0,0);
 part_type_size(global.partConfettiR,0.5,1,-0.01,0);
-part_type_speed(global.partConfettiR,3,8,-0.05,0);
+part_type_speed(global.partConfettiR,3,9,-0.05,0);
 part_type_gravity(global.partConfettiR,0.15,-90);
 part_type_sprite(global.partConfettiR,Spr_Confetti2,false,false,true);
 // confetti that goes to the left
 part_type_direction(global.partConfettiL,90,135,0,0);
 part_type_orientation(global.partConfettiL,0,359,2,0,0);
 part_type_size(global.partConfettiL,0.5,1,-0.01,0);
-part_type_speed(global.partConfettiL,3,8,-0.05,0);
+part_type_speed(global.partConfettiL,3,9,-0.05,0);
 part_type_gravity(global.partConfettiL,0.15,-90);
 part_type_sprite(global.partConfettiL,Spr_Confetti2,false,false,true);
 

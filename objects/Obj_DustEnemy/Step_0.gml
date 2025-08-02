@@ -2,4 +2,4 @@ event_inherited();
 
 LoopAroundScreen();
 
-spriteImageIndex = (spriteImageIndex+2/60) % 2;
+spriteImageIndex = (spriteImageIndex+6/60) % 6;

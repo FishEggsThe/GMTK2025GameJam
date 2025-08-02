@@ -509,6 +509,7 @@
     {"id":{"name":"Spr_Couch2","path":"sprites/Spr_Couch2/Spr_Couch2.yy",},},
     {"id":{"name":"Spr_Diamond","path":"sprites/Spr_Diamond/Spr_Diamond.yy",},},
     {"id":{"name":"spr_dust_temp","path":"sprites/spr_dust_temp/spr_dust_temp.yy",},},
+    {"id":{"name":"Spr_Dust","path":"sprites/Spr_Dust/Spr_Dust.yy",},},
     {"id":{"name":"Spr_DustMite","path":"sprites/Spr_DustMite/Spr_DustMite.yy",},},
     {"id":{"name":"Spr_EnemyLandMarker","path":"sprites/Spr_EnemyLandMarker/Spr_EnemyLandMarker.yy",},},
     {"id":{"name":"Spr_EnemyLandMarker61","path":"sprites/Spr_EnemyLandMarker61/Spr_EnemyLandMarker61.yy",},},
