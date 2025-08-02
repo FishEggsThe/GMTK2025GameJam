@@ -82,8 +82,8 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 			}
 		}
 		if characterIndex > -1 {
-			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, _size, _size, 0, c_white, 1)
-			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
+			draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, _size, _size, 0, c_white, 1)
+			draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
 		}
 		xLinePos += fontWidth*_size
 	}

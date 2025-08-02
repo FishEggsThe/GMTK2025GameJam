@@ -46,8 +46,8 @@ function Menu(items, creator) constructor {
 			var color = selected ? c_white : c_black;
 			//DrawText(left + borderOffset, top + (i + 1)*rowHeight, item.title, fa_left, fa_top, color);
 			//DrawText(right - borderOffset, top + (i + 1)*rowHeight, item.title2, fa_right, fa_top, color);
-			DrawSpriteText(left + borderOffset, top + (i + 1)*rowHeight, item.title, 1, fa_left, fa_top, selected);
-			DrawSpriteText(right - borderOffset, top + (i + 1)*rowHeight, item.title2, 1, fa_right, fa_top, selected);
+			DrawSpriteText(item.title, left + borderOffset, top + (i + 1)*rowHeight, 1, fa_left, fa_top, selected);
+			DrawSpriteText(item.title2, right - borderOffset, top + (i + 1)*rowHeight, 1, fa_right, fa_top, selected);
 			if selected { DrawText(left+borderOffset, bottom-borderOffset, item.description, fa_left, fa_bottom); }
 	
 			//
