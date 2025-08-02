@@ -7,3 +7,7 @@ if !startEnemy {
 
 DrawSprite(sprite, spriteImageIndex, x+xShake, y+yShake, 
 				image_xscale, image_yscale, 0, spriteImageBlend, alpha);
+
+if CheckDebug() {
+	DrawText(x, y, depth, fa_right, fa_bottom, c_white);
+}

@@ -24,8 +24,17 @@ function SpawnMine(_x, _y) {
 	return newMine;
 }
 
+function FaceSpawnAnimate() {
+	with Obj_RaceTrack {
+		alarm[1] = spawnFaceTimer;
+		faceState = laughing;
+	}
+	PlaySound(Spawn_2, random_range(0.95, 1.05));
+}
+
 function SpawnWave() {
-	instance_create_layer(x, y, "Enemies", choose(Obj_DustDuoEnemy, Obj_RockEnemy));
+	FaceSpawnAnimate();
+	SpawnEnemy(enemyPoolEasy, irandom(1));
 	repeat(1 + (Obj_RaceTrack.lapsCompleted % 3 == 0))
 		SpawnEnemy(enemyPoolHard, irandom(2));
 	
@@ -39,8 +48,9 @@ function SpawnWave() {
 	//}
 }
 function SpawnFirstWave() {
-	instance_create_layer(x, y, "Enemies", Obj_DustDuoEnemy);
-	instance_create_layer(x, y, "Enemies", Obj_RockDuoEnemy);
+	FaceSpawnAnimate()
+	SpawnEnemy(enemyPoolEasy, 0);
+	SpawnEnemy(enemyPoolEasy, 2);
 	repeat(2)
 		SpawnEnemy(enemyPoolHard, irandom(2));
 }

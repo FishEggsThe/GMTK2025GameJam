@@ -40,4 +40,4 @@ repairTime = 0;
 //x = room_width/2+units[0]*radiusPos;
 //y = room_height/2+units[1]*radiusPos;
 
-depth = 10;
+depth = 120;

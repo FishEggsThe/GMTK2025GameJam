@@ -1,5 +1,5 @@
 event_inherited();
 
 if CheckDebug() {
-	draw_text(x, y, repairTime);
+	DrawText(x, y, repairTime, fa_left, fa_top, c_white);
 }

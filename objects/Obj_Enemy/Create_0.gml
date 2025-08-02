@@ -1,6 +1,7 @@
 canCollide = false;
 startEnemy = false;
-xStartingPos = room_width/2; yStartingPos = room_height/2;
+explodeOnDeath = false;
+xStartingPos = room_width/2; yStartingPos = room_height/2 + 55;
 xLandingPos = 0; yLandingPos = 0;
 GetSpawnPosition();
 

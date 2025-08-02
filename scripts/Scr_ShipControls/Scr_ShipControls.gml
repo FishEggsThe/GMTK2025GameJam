@@ -77,6 +77,12 @@ function ApplyInputs() {
 	var possibleEnemy = instance_place(x, y, Obj_Enemy)
 	if (possibleEnemy != noone && possibleEnemy.canCollide) || place_meeting(x, y, Obj_RaceTrackWalls) {
 		ShipDies();
+		if possibleEnemy != noone && possibleEnemy.explodeOnDeath {
+			instance_create_layer(possibleEnemy.x, possibleEnemy.y, "Instances", Obj_Explosion);
+			instance_destroy(possibleEnemy);
+		} else {
+			PlaySound(splat);
+		}
 	}
 }
 
