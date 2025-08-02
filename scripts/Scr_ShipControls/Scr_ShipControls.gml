@@ -1,11 +1,13 @@
 function ReadInputs() {
 	var turnSide = InputCheck(INPUT_VERB.LEFT) - InputCheck(INPUT_VERB.RIGHT);
-	var accelerateInput = InputCheck(INPUT_VERB.ACCEL);
-	var dashInput = InputPressed(INPUT_VERB.DASH);
-	if Obj_Control.singleButton {
-		var checkForSingle = accelerateInput || dashInput;
-		accelerateInput = checkForSingle;
-		dashInput = checkForSingle;
+	var accelerateInput;
+	var dashInput;
+	if !Obj_Control.singleButton {
+		accelerateInput = InputCheck(INPUT_VERB.ACCEL);
+		dashInput = InputPressed(INPUT_VERB.DASH);
+	} else {
+		accelerateInput = InputCheckMany([INPUT_VERB.ACCEL, INPUT_VERB.DASH]);
+		dashInput = InputPressedMany([INPUT_VERB.ACCEL, INPUT_VERB.DASH]);
 	}
 
 	if accelerateInput {
