@@ -61,16 +61,22 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	}
 	
 	var characterIndex = -1
-	var xLinePos = _x;
+	var lineMargin = 10;
+	var goLeft = _halign == fa_right;
+	var xLinePos = _x - (goLeft*fontWidth*_size);
 	var yLinePos = _y;
+	if _valign == fa_bottom {
+		yLinePos -= numOfLines*(fontHeight+lineMargin)*_size
+		//show_message(yLinePos)
+	}
 	var xLinePosSet = _x;
-	var lineMargin = 5;
 	for(var i = 0; i < stringLength; i++) {
-		var character = listOfCharacters[i]
+		var index = goLeft ? stringLength-i-1 : i
+		var character = listOfCharacters[index]
 		
 		if character == "\n" {
 			xLinePos = xLinePosSet;
-			yLinePos += (fontHeight+lineMargin)*100;
+			yLinePos += (fontHeight+lineMargin)*_size;
 			continue
 		}
 			
@@ -86,7 +92,8 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 			draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, _size, _size, 0, c_white, 1)
 			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
 		}
-		xLinePos += fontWidth*_size
+		var dir = goLeft ? -1 : 1;
+		xLinePos += dir*fontWidth*_size
 	}
 	
 }

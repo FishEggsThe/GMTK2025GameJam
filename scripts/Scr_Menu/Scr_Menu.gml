@@ -30,10 +30,14 @@ function Menu(items, creator) constructor {
 		HandleInputs();
 	}
 	
+	offset = 70; borderOffset = 30;
+	left = offset; right = room_width/2 - offset;
+	top = offset; bottom = room_height - offset;
+	
 	function DrawMenu() {
-		var offset = 70; var borderOffset = 30;
-		var left = offset; var right = room_width/2 - offset;
-		var top = offset; var bottom = room_height - offset;
+		//var offset = 70; var borderOffset = 30;
+		//var left = offset; var right = room_width/2 - offset;
+		//var top = offset; var bottom = room_height - offset;
 
 		draw_set_color(c_maroon);
 		draw_rectangle(left, top, right, bottom, false);
@@ -48,7 +52,7 @@ function Menu(items, creator) constructor {
 			//DrawText(right - borderOffset, top + (i + 1)*rowHeight, item.title2, fa_right, fa_top, color);
 			DrawSpriteText(item.title, left + borderOffset, top + (i + 1)*rowHeight, 1, fa_left, fa_top, selected);
 			DrawSpriteText(item.title2, right - borderOffset, top + (i + 1)*rowHeight, 1, fa_right, fa_top, selected);
-			if selected { DrawText(left+borderOffset, bottom-borderOffset, item.description, fa_left, fa_bottom); }
+			if selected { DrawSpriteText(item.description, left+borderOffset, bottom-borderOffset, 1, fa_left, fa_bottom); }
 	
 			//
 			//DrawSpriteText

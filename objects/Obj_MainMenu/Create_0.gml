@@ -8,12 +8,12 @@ var mainItems = [
 mainMenu = new Menu(mainItems, id);
 
 var optionItems = [
-	//new MenuItem("Single-Button Controls", "Toggle Dash and Acceleration to use one button\n(Intended for Controller Users)", function(c){  Obj_Control.singleButton != Obj_Control.singleButton; }),
-	new MenuItem("Single-Button Controls", "Toggle Dash and Acceleration to use one button\n(Intended for Controller Users)", function(c){ Obj_Control.singleButton = !Obj_Control.singleButton; }, "", function(m){ m.title2 = Obj_Control.singleButton ? "Enabled" : "Disabled" }),
+	new MenuItem("Single-Button Controls", "Toggle Dash and Acceleration to\nuse one button\nIntended for Controller Users", function(c){ Obj_Control.singleButton = !Obj_Control.singleButton; }, "", function(m){ m.title2 = Obj_Control.singleButton ? "Enabled" : "Disabled" }),
 	new MenuItem("Volume", "Change the volume of the game", function(c){ show_debug_message("Put volume button here idk"); }),
 	new MenuItem("Back", "Go Back", function(c){ c.currentMenu.menuIndex = 0; c.currentMenu = c.mainMenu; })
 ]
 optionsMenu = new Menu(optionItems, id);
+optionsMenu.right += room_width/2;
 
 currentMenu = mainMenu;
 
