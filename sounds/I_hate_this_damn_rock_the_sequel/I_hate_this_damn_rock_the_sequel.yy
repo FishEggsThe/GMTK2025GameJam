@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"I_hate_this_damn_rock_the_sequel",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.840839,
+  "name":"I_hate_this_damn_rock_the_sequel",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Sounds/Sound Effects/Enemies.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"I_hate_this_damn_rock_the_sequel.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -164,7 +164,6 @@
     {"id":{"name":"Obj_ShooterMine","path":"objects/Obj_ShooterMine/Obj_ShooterMine.yy",},},
     {"id":{"name":"Obj_SpikyEnemy","path":"objects/Obj_SpikyEnemy/Obj_SpikyEnemy.yy",},},
     {"id":{"name":"Obj_TrailBubble","path":"objects/Obj_TrailBubble/Obj_TrailBubble.yy",},},
-    {"id":{"name":"Rm_Game_1","path":"rooms/Rm_Game_1/Rm_Game_1.yy",},},
     {"id":{"name":"Rm_Game","path":"rooms/Rm_Game/Rm_Game.yy",},},
     {"id":{"name":"__InputBindingIsThumbstick","path":"scripts/__InputBindingIsThumbstick/__InputBindingIsThumbstick.yy",},},
     {"id":{"name":"__InputBindingScan","path":"scripts/__InputBindingScan/__InputBindingScan.yy",},},
@@ -488,6 +487,9 @@
     {"id":{"name":"Death__1_","path":"sounds/Death__1_/Death__1_.yy",},},
     {"id":{"name":"Engine_LOOPLESS_WIP","path":"sounds/Engine_LOOPLESS_WIP/Engine_LOOPLESS_WIP.yy",},},
     {"id":{"name":"explosion10","path":"sounds/explosion10/explosion10.yy",},},
+    {"id":{"name":"I_hate_this_damn_rock_the_sequel","path":"sounds/I_hate_this_damn_rock_the_sequel/I_hate_this_damn_rock_the_sequel.yy",},},
+    {"id":{"name":"I_hate_this_damn_rock","path":"sounds/I_hate_this_damn_rock/I_hate_this_damn_rock.yy",},},
+    {"id":{"name":"kcor_nmad_siht_etah_I","path":"sounds/kcor_nmad_siht_etah_I/kcor_nmad_siht_etah_I.yy",},},
     {"id":{"name":"Lap_2","path":"sounds/Lap_2/Lap_2.yy",},},
     {"id":{"name":"mp3","path":"sounds/mp3/mp3.yy",},},
     {"id":{"name":"Rock_Attempt_2","path":"sounds/Rock_Attempt_2/Rock_Attempt_2.yy",},},
@@ -571,7 +573,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Rm_Game","path":"rooms/Rm_Game/Rm_Game.yy",},},
-    {"roomId":{"name":"Rm_Game_1","path":"rooms/Rm_Game_1/Rm_Game_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

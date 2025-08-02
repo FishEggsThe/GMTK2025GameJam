@@ -8,7 +8,7 @@ function DrawText(_x, _y, _string, _halign, _valign, _color=c_black, _xscale=1, 
 								_color, _color, _color, _color, _alpha);
 }
 
-function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign = fa_top, _outline = true, _selected = false) {
+function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign = fa_top, _selected = false) {
 	var fontContains = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 	var containsLength = string_length(fontContains)
 	
@@ -19,13 +19,12 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	var fontHeight = sprite_get_width(Spr_Font);
 	var fontSprite = _selected ? Spr_FontSelected : Spr_Font;
 	
-	//var characterIndex = -1
-	//var stringLength = string_length(trueString)
-	//var setXOffset = 0
+	// Set up some variables and get values for orientations
+	var setXOffset = 0
 	//switch(_halign) {
-	//	//case fa_left:
-	//	//setXOffset = 0
-	//	//break
+	//	case fa_left:
+	//	setXOffset = 0
+	//	break
 	//	case fa_center:
 	//	setXOffset = -stringLength*fontWidth*_size/2
 	//	break
@@ -33,12 +32,12 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	//	setXOffset = -stringLength*fontWidth*_size
 	//	break
 	//}
-	//var xOffset = setXOffset
-	//var yOffset = 0
+	var xOffset = setXOffset
+	var yOffset = 0
 	//switch(_valign) {
-	//	//case fa_top:
-	//	//yOffset = 0
-	//	//break
+	//	case fa_top:
+	//	yOffset = 0
+	//	break
 	//	case fa_middle:
 	//	yOffset = -(fontHeight+3)*_size/2
 	//	break
@@ -47,33 +46,47 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	//	break
 	//}
 	
-	//for(var i = 0; i < stringLength; i++) {
-	//	var character = string_copy(trueString, i+1, 1)
+	// Get all new lines for later calculations
+	var listOfCharacters = [];
+	var numOfLines = 1;
+	var stringLength = string_length(trueString)
+	for(var i = 0; i < stringLength; i++) {
+		var character = string_copy(trueString, i+1, 1)
 		
-	//	if character == "\n" {
-	//		yOffset += (fontHeight+3)*_size
-	//		xOffset = setXOffset
-	//		continue
-	//	}
+		if character == "\n" {
+			numOfLines++;
+		}
+		array_push(listOfCharacters, character);
+	}
+	
+	var characterIndex = -1
+	var xLinePos = _x;
+	var yLinePos = _y;
+	var xLinePosSet = _x;
+	var yLinePosSet = _y;
+	for(var i = 0; i < stringLength; i++) {
+		var character = listOfCharacters[i]
+		
+		if character == "\n" {
+			xLinePos = xLinePosSet;
+			yLinePos += fontHeight*_size;
+			continue
+		}
 			
-	//	characterIndex = -1
-	//	for(var j = 0; j < containsLength; j++) {
-	//		var contain = string_copy(fontContains, j+1, 1)
-	//		if character == contain {
-	//			characterIndex = j
-	//			break
-	//		}
-	//	}
-	//	if characterIndex > -1 {
-	//		if _outline
-	//			draw_sprite_ext(fontSprite, characterIndex, _x+xOffset+5, _y+yOffset+5, 
-	//							_size, _size, 0, c_black, 1)
-			
-	//		draw_sprite_ext(fontSprite, characterIndex, _x+xOffset, _y+yOffset, 
-	//						_size, _size, 0, c_white, 1)
-	//	}
-	//	xOffset += fontWidth*_size
-	//}
+		characterIndex = -1
+		for(var j = 0; j < containsLength; j++) {
+			var contain = string_copy(fontContains, j+1, 1)
+			if character == contain {
+				characterIndex = j
+				break
+			}
+		}
+		if characterIndex > -1 {
+			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, _size, _size, 0, c_white, 1)
+			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
+		}
+		xLinePos += fontWidth*_size
+	}
 	
 }
 

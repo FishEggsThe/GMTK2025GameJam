@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"kcor_nmad_siht_etah_I",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.6086621,
+  "name":"kcor_nmad_siht_etah_I",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Sounds/Sound Effects/Enemies.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"kcor_nmad_siht_etah_I.mp3",
+  "type":0,
+  "volume":1.0,
+}
