@@ -38,7 +38,7 @@ function Menu(items, creator) constructor {
 		draw_set_color(c_maroon);
 		draw_rectangle(left, top, right, bottom, false);
 		for(var i = 0; i < menuLength; i++) {
-			var rowHeight = 30;
+			var rowHeight = sprite_get_height(Spr_Font) +10;
 			var index = menuIndex;
 			var selected = index == i;
 			var item = menuItems[i];

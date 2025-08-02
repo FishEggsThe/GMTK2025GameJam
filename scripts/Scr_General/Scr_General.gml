@@ -16,11 +16,12 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	trueString = string(_string)
 	trueString = string_upper(trueString)
 	var fontWidth = sprite_get_width(Spr_Font);
-	var fontHeight = sprite_get_width(Spr_Font);
+	var fontHeight = sprite_get_height(Spr_Font);
+	//show_message($"{fontWidth}x{fontHeight}")
 	var fontSprite = _selected ? Spr_FontSelected : Spr_Font;
 	
 	// Set up some variables and get values for orientations
-	var setXOffset = 0
+	//var setXOffset = 0
 	//switch(_halign) {
 	//	case fa_left:
 	//	setXOffset = 0
@@ -32,8 +33,8 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	//	setXOffset = -stringLength*fontWidth*_size
 	//	break
 	//}
-	var xOffset = setXOffset
-	var yOffset = 0
+	//var xOffset = setXOffset
+	//var yOffset = 0
 	//switch(_valign) {
 	//	case fa_top:
 	//	yOffset = 0
@@ -63,13 +64,13 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 	var xLinePos = _x;
 	var yLinePos = _y;
 	var xLinePosSet = _x;
-	var yLinePosSet = _y;
+	var lineMargin = 5;
 	for(var i = 0; i < stringLength; i++) {
 		var character = listOfCharacters[i]
 		
 		if character == "\n" {
 			xLinePos = xLinePosSet;
-			yLinePos += fontHeight*_size;
+			yLinePos += (fontHeight+lineMargin)*100;
 			continue
 		}
 			
@@ -83,7 +84,7 @@ function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign =
 		}
 		if characterIndex > -1 {
 			draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, _size, _size, 0, c_white, 1)
-			draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
+			//draw_sprite_ext(fontSprite, characterIndex, xLinePos, yLinePos, 1, 1, 0, c_white, 1)
 		}
 		xLinePos += fontWidth*_size
 	}
