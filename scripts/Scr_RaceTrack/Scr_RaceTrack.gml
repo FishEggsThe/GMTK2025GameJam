@@ -1,4 +1,5 @@
 function StartIntro() {
+	StopMusic();
 	PlaySound(Beep_beep_beep_GO);
 	Obj_Control.playGameIntro = false;
 	with Obj_RaceTrack {
@@ -18,6 +19,7 @@ function RestartRoom() {
 	Obj_Control.playGameIntro = true;
 	StopMusic();
 	room_goto(Rm_Game);
+	PlayMusic(Sleep_Machine);
 }
 
 function ResetCheckpoints() {

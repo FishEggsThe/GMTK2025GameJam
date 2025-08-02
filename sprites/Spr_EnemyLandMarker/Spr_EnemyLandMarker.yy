@@ -36,8 +36,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"Markers",
+    "path":"folders/Sprites/Enemies/Markers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

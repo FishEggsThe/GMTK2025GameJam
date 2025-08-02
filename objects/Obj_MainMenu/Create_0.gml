@@ -16,3 +16,5 @@ var optionItems = [
 optionsMenu = new Menu(optionItems, id);
 
 currentMenu = mainMenu;
+
+PlayMusic(Sleep_Machine);
