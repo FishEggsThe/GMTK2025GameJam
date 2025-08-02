@@ -80,8 +80,20 @@ function ApplyInputs() {
 		if possibleEnemy != noone && possibleEnemy.explodeOnDeath {
 			instance_create_layer(possibleEnemy.x, possibleEnemy.y, "Instances", Obj_Explosion);
 			instance_destroy(possibleEnemy);
+			sprite = Spr_PlayerCooked;
+			shipAngle = 0;
 		} else {
 			PlaySound(splat);
+			var noseDist = 25;
+			var xNose = x + noseDist * cos(degtorad(shipAngle));
+			var yNose = y - noseDist * sin(degtorad(shipAngle));
+			if position_meeting(xNose, yNose, Obj_Enemy) || 
+			   position_meeting(xNose, yNose, Obj_RaceTrackWalls) {
+				sprite = Spr_PlayerCarCrash;
+			} else {
+				sprite = Spr_PlayerExplode;
+				shipAngle = 0;
+			}
 		}
 	}
 }
@@ -95,8 +107,7 @@ function ShipDies() {
 	if dead { return; } // Just making sure lol
 	
 	dead = true;
-	sprite = Spr_PlayerExplode;
-	shipAngle = 0;
+	//sprite = Spr_PlayerExplode;
 	ShakeScreen(12);
 	PlaySound(Death__1_);
 	
