@@ -11,3 +11,10 @@ function PlayMusic(music, pitch = 1) {
 		}
 	}
 }
+
+function StopMusic() {
+	with Obj_AudioPlayer {
+		audio_stop_sound(currentMusic);
+		currentMusic = noone;
+	}
+}

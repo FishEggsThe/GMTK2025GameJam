@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Spawn_2",
+  "%Name":"SWIM_FISH_SWIM",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.0852154,
-  "name":"Spawn_2",
+  "duration":96.02612,
+  "name":"SWIM_FISH_SWIM",
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sounds/Sound Effects/Enemies.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Spawn_2.mp3",
+  "soundFile":"SWIM_FISH_SWIM.mp3",
   "type":0,
-  "volume":0.4,
+  "volume":1.0,
 }

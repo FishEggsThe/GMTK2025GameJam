@@ -10,7 +10,14 @@ function StartRace() {
 	with Obj_PlayerShip { moveState = moving; }
 	with Obj_EnemySpawner { SpawnFirstWave(); }
 	startTimer = true;
-	PlayMusic(mp3);
+	PlayMusic(SWIM_FISH_SWIM);
+}
+
+function RestartRoom() {
+	Obj_MainMenu.menuMode = true;
+	Obj_Control.playGameIntro = true;
+	StopMusic();
+	room_goto(Rm_Game);
 }
 
 function ResetCheckpoints() {

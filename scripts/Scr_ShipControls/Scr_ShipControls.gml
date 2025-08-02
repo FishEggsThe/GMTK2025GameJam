@@ -119,6 +119,8 @@ function ShipDies() {
 	ShakeScreen(12);
 	PlaySound(Death__1_);
 	
+	Obj_RunEndMenu.menuMode = true;
+	
 	//with Obj_HighScoreManager {
 	//	showScores = true;
 	//	addScoreFirebase(Obj_RaceTrack.lapsCompleted, Obj_Control.playerName);
