@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Explosion",
+  "%Name":"Obj_Menu",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Explosion",
+  "name":"Obj_Menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Effects",
-    "path":"folders/Objects/Effects.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_Effect",
-    "path":"objects/Obj_Effect/Obj_Effect.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"explosion",
-    "path":"sprites/explosion/explosion.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

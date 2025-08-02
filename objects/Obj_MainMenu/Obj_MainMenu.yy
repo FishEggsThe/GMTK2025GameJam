@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Flash",
-  "eventList":[],
+  "%Name":"Obj_MainMenu",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_Flash",
+  "name":"Obj_MainMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Effects",
-    "path":"folders/Objects/Effects.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
   "parentObjectId":{
-    "name":"Obj_Effect",
-    "path":"objects/Obj_Effect/Obj_Effect.yy",
+    "name":"Obj_Menu",
+    "path":"objects/Obj_Menu/Obj_Menu.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Spr_Flash",
-    "path":"sprites/Spr_Flash/Spr_Flash.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

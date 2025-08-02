@@ -1,3 +1,5 @@
+primeState();
+
 event_inherited();
 
 explodeOnDeath = true;

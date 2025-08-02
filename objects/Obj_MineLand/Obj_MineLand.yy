@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Flash",
-  "eventList":[],
+  "%Name":"Obj_MineLand",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_Flash",
+  "name":"Obj_MineLand",
   "overriddenProperties":[],
   "parent":{
     "name":"Effects",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Flash",
-    "path":"sprites/Spr_Flash/Spr_Flash.yy",
+    "name":"Spr_TankMineImpact",
+    "path":"sprites/Spr_TankMineImpact/Spr_TankMineImpact.yy",
   },
   "spriteMaskId":null,
   "visible":true,

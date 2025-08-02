@@ -1,8 +1,8 @@
 var alpha = canCollide ? 1 : 0.5;
 
 if !startEnemy {
-	DrawSprite(Spr_EnemyLandMarker61, markerImageIndex, xLandingPos, yLandingPos, 2, 2);
-	markerImageIndex = (markerImageIndex + 12/60) % markerFrames;
+	DrawSprite(markerSprite, markerImageIndex, xLandingPos, yLandingPos, 2, 2);
+	markerImageIndex = (markerImageIndex + markerImageIncrement) % markerFrames;
 }
 
 DrawSprite(sprite, spriteImageIndex, x+xShake, y+yShake, 

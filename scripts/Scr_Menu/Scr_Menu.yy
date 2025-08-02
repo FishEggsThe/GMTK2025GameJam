@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Scr_Audio",
+  "%Name":"Scr_Menu",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Scr_Audio",
+  "name":"Scr_Menu",
   "parent":{
     "name":"Misc",
     "path":"folders/Scripts/Misc.yy",

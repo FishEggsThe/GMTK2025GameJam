@@ -10,7 +10,7 @@ numOfScoresShown = 5;
 
 root = "highscores";
 listener = ifUsing ? FirebaseFirestore(root).Listener() : -1;
-data = -1;
+data = [];
 
 sort_score = function(_a, _b) {
 	return _b.points - _a.points;
