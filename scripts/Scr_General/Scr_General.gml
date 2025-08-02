@@ -8,24 +8,69 @@ function DrawText(_x, _y, _string, _halign, _valign, _color=c_black, _xscale=1, 
 								_color, _color, _color, _color, _alpha);
 }
 
-function LoopAroundScreen() {
-	var offset = 116;
-
-	if x > room_width+offset {
-		x -= room_width+offset*2;
+function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign = fa_top, _outline = true) {
+	var characters = "abcdefghijklmnopqrstuvwxyz1234567890";
+	
+	var trueString = ""
+	trueString = string(_string)
+	trueString = string_upper(trueString)
+	
+	var characterIndex = -1
+	var stringLength = string_length(trueString)
+	var setXOffset = 0
+	switch(_halign) {
+		//case fa_left:
+		//setXOffset = 0
+		//break
+		case fa_center:
+		setXOffset = -stringLength*global.fontWidth*_size/2
+		break
+		case fa_right:
+		setXOffset = -stringLength*global.fontWidth*_size
+		break
 	}
-
-	if x < -offset {
-		x += room_width+offset*2;
+	var xOffset = setXOffset
+	var yOffset = 0
+	switch(_valign) {
+		//case fa_top:
+		//yOffset = 0
+		//break
+		case fa_middle:
+		yOffset = -(global.fontHeight+3)*_size/2
+		break
+		case fa_bottom:
+		yOffset = -(global.fontHeight+3)*_size
+		break
 	}
-
-	if y > room_height+offset {
-		y -= room_height+offset*2;
+	
+	for(var i = 0; i < stringLength; i++) {
+		var character = string_copy(trueString, i+1, 1)
+		
+		if character == "\n" {
+			yOffset += (global.fontHeight+3)*_size
+			xOffset = setXOffset
+			continue
+		}
+			
+		characterIndex = -1
+		for(var j = 0; j < global.containsLength; j++) {
+			var contain = string_copy(global.fontContains, j+1, 1)
+			if character == contain {
+				characterIndex = j
+				break
+			}
+		}
+		if characterIndex > -1 {
+			if _outline
+				draw_sprite_ext(global.fontSprite, characterIndex, _x+xOffset+5, _y+yOffset+5, 
+								_size, _size, 0, c_black, 1)
+			
+			draw_sprite_ext(global.fontSprite, characterIndex, _x+xOffset, _y+yOffset, 
+							_size, _size, 0, c_white, 1)
+		}
+		xOffset += global.fontWidth*_size
 	}
-
-	if y < -offset {
-		y += room_height+offset*2;
-	}
+	
 }
 
 function CheckDebug() {
@@ -38,17 +83,4 @@ function CheckIfDuplicate(inst = id) {
 
 function ShakeScreen(amount) {
 	with Obj_Camera { screenShake += amount; }
-}
-
-function PlaySound(sound, pitch = 1) {
-	audio_play_sound(sound, 1, false, 1, 0, pitch);
-}
-function PlayMusic(music, pitch = 1) {
-	with Obj_AudioPlayer {
-		if currentMusic != music {
-			audio_stop_sound(currentMusic);
-			currentMusic = music;
-			audio_play_sound(music, 1, true, 1, 0, pitch);
-		}
-	}
 }
