@@ -19,8 +19,8 @@ function __firebase_firestore_should_use_sdk() {
 /// @pure
 function __firebase_firestore_build_url(_builder) {
 
-	//static _default_url = extension_get_option_value("YYFirebaseFirestore", "projectId");
-    static _default_url = dotEnv_get("PROJECTID");
+	static _default_url = extension_get_option_value("YYFirebaseFirestore", "projectId");
+    //static _default_url = dotEnv_get("PROJECTID");
 
 	with (_builder) {
 		var _private = __;

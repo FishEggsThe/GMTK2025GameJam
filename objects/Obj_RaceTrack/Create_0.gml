@@ -3,7 +3,12 @@ timeToLap = timeToLapSet;
 startTimer = !Obj_Control.playGameIntro;
 checkpoints = [];
 lapsCompleted = 0;
+playerScore = 0;
 SetupCheckpoints();
+
+getTimeInSeconds = function() {
+	return ceil(timeToLap/60);
+}
 
 // Faces
 faceImageIndex = 0;
@@ -25,6 +30,7 @@ laughing = function() {
 }
 
 faceState = staring;
+frames = sprite_get_number(spr_raceCircle);
 
 if Obj_Control.playGameIntro { StartIntro(); }
 else { StartRace(); }

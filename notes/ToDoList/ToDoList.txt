@@ -1,9 +1,6 @@
 Do this:
-* Make the rest of the enemies
-	* Tank that goes around the track
 
 * Ghost is useless
-* Mix up unit spawns and limit to probably 3 per wave
 * Make lap timer decrease per wave and stuff
 * Make Shooter Mines appear from sky instead of low arcing bounce
 * Ghost should flash before dash

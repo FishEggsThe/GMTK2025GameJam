@@ -6,8 +6,9 @@ depth = -15;
 
 ifUsing = false;
 showScores = true;
+numOfScoresShown = 5;
 
-root = dotEnv_get("COLLECTION");
+root = "highscores";
 listener = ifUsing ? FirebaseFirestore(root).Listener() : -1;
 data = -1;
 
@@ -16,7 +17,10 @@ sort_score = function(_a, _b) {
 }
 
 addScoreFirebase = function(p, n) {
-	data = [];
-	var doc = json_stringify(InitializeScore(p, n));
-	FirebaseFirestore(root).Set(doc);
+	var i = min(array_length(data), numOfScoresShown-1);
+	if p > data[i] {
+		data = [];
+		var doc = json_stringify(InitializeScore(p, n));
+		FirebaseFirestore(root).Set(doc);
+	}
 }

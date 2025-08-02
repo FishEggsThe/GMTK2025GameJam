@@ -22,6 +22,7 @@ function ResetCheckpoints() {
 
 function CountLap() {
 	lapsCompleted++;
+	playerScore += ceil(-1+(frames-1)*timeToLap/timeToLapSet);
 	timeToLap = timeToLapSet;
 	ResetCheckpoints();
 	PlaySound(Lap_2);
