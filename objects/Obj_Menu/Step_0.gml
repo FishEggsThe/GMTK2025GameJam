@@ -1,1 +1,2 @@
-currentMenu.WorkMenu();
+if menuMode
+	currentMenu.WorkMenu();

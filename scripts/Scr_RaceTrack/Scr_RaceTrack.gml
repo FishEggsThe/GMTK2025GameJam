@@ -1,12 +1,14 @@
 function StartIntro() {
 	PlaySound(Beep_beep_beep_GO);
-	alarm[0] = audio_sound_length(Beep_beep_beep_GO)*60;
-	startTimer = false;
+	Obj_Control.playGameIntro = false;
+	with Obj_RaceTrack {
+		alarm[0] = audio_sound_length(Beep_beep_beep_GO)*60;
+		startTimer = false;
+	}
 }
 function StartRace() {
 	with Obj_PlayerShip { moveState = moving; }
 	with Obj_EnemySpawner { SpawnFirstWave(); }
-	Obj_Control.playGameIntro = false;
 	startTimer = true;
 	PlayMusic(mp3);
 }

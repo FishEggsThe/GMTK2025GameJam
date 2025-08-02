@@ -32,5 +32,4 @@ laughing = function() {
 faceState = staring;
 frames = sprite_get_number(spr_raceCircle);
 
-if Obj_Control.playGameIntro { StartIntro(); }
-else { StartRace(); }
+if !Obj_Control.playGameIntro { StartRace(); }

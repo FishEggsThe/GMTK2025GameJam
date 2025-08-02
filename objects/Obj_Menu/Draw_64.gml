@@ -1,1 +1,2 @@
-currentMenu.DrawMenu();
+if menuMode
+	currentMenu.DrawMenu();

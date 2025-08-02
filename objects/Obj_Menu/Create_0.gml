@@ -7,3 +7,5 @@ currentMenu = new Menu(menuItems, id);
 
 menuIndex = 0;
 menuLength = array_length(menuItems)
+
+menuMode = true;
