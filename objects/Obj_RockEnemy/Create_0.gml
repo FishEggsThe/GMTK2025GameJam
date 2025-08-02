@@ -6,23 +6,22 @@ repair = function() {
 	if repairTime < repairTimeSet*0.15 {
 		setShake()
 		
-		
 	} if repairTime <= 0 { setSprite(false); }
 }
 
-sprite = spr_rock_temp;
+sprite = Spr_Rock;
 setSprite = function(isBroken) {
 	broken = isBroken;
 	if isBroken {
 		repairState = repair;
 		repairTime = repairTimeSet;
-		sprite = spr_rockBreak_temp;
+		sprite = Spr_RockBreak;
 		canCollide = false;
 		ShakeScreen(9);
 		PlaySound(Rock_Attempt_2);
 	} else {
 		repairState = function(){};
-		sprite = spr_rock_temp;
+		sprite = Spr_Rock;
 		canCollide = true;
 		setShake(0);
 	}

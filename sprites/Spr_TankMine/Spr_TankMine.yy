@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"Tank",
+    "path":"folders/Sprites/Enemies/Tank.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,6 +1,6 @@
 event_inherited();
 
-sprite = spr_tank_temp;
+sprite = Spr_TankIdle;
 
 canShoot = true;
 mineBank = [];

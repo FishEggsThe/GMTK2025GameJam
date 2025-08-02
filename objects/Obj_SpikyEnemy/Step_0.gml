@@ -7,3 +7,5 @@ var position = animcurve_channel_evaluate(gameCurve, gamePercent);
 
 x = startPos[0] + (distances[0] * position);
 y = startPos[1] + (distances[1] * position);
+
+spriteImageIndex = (spriteImageIndex+6/60) % 6;

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"Ghost",
+    "path":"folders/Sprites/Enemies/Ghost.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

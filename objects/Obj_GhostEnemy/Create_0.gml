@@ -1,6 +1,6 @@
 event_inherited();
 
-sprite = spr_ghost;
+sprite = spr_ghost68;
 
 xLandingPos = Obj_PlayerShip.x;
 yLandingPos = Obj_PlayerShip.y;

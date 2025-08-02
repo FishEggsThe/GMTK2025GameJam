@@ -1,7 +1,7 @@
 event_inherited();
 
 
-sprite = spr_spike_temp;
+sprite = Spr_Spike;
 
 var angle = point_direction(room_width/2, room_height/2, xLandingPos, yLandingPos)
 var units = [cos(degtorad(angle)), -sin(degtorad(angle))];

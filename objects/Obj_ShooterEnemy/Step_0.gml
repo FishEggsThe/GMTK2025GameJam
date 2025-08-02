@@ -2,6 +2,7 @@ event_inherited();
 
 if canShoot && collision_line(x, y, room_width/2, room_height/2, Obj_PlayerShip, false, false) {
 	canShoot = false;
+	spriteImageIndex = 0;
 	animateShooting = true;
 	var xTarget = Obj_PlayerShip.x;
 	var yTarget = Obj_PlayerShip.y;
@@ -13,7 +14,7 @@ if canShoot && collision_line(x, y, room_width/2, room_height/2, Obj_PlayerShip,
 			oldMine.alarm[0] = 30;
 	}
 	
-	sprite =  spr_tankShoot_temp;
+	sprite =  Spr_tankShoot;
 }
 
 if animateShooting {
@@ -21,6 +22,8 @@ if animateShooting {
 	if spriteImageIndex >= 5 {
 		spriteImageIndex = 0;
 		animateShooting = false;
-		sprite = spr_tank_temp;
+		sprite = Spr_TankIdle;
 	}
+} else {
+	spriteImageIndex = spriteImageIndex + 3/60 % 2;
 }
