@@ -1,7 +1,7 @@
 function ReadInputs() {
-	var turnSide = keyboard_check(ord("A")) - keyboard_check(ord("D"));
-	var accelerateInput = keyboard_check(ord("W"));
-	var dashInput = keyboard_check_pressed(vk_space);
+	var turnSide = InputCheck(INPUT_VERB.LEFT) - InputCheck(INPUT_VERB.RIGHT);
+	var accelerateInput = InputCheck(INPUT_VERB.UP);
+	var dashInput = InputPressed(INPUT_VERB.DASH);
 
 	if accelerateInput {
 		AddSpeed(acceleration)

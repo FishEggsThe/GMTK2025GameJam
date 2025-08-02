@@ -9,7 +9,7 @@ sprite = Spr_FruitLoopEnemy;
 spriteImageIndex = 0;
 spriteImageBlend = c_white;
 markerSprite = Spr_EnemyLandMarker;
-markerImageIncrement = 12/60;
+markerImageIncrement = 18/60;
 
 percent = 0;
 curve = animcurve_get_channel(AnCv_EnemySpawnJump, "curve1");

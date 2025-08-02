@@ -1,4 +1,4 @@
-if keyboard_check_pressed(ord("R")) {
+if InputPressed(INPUT_VERB.RESTART) {
 	room_goto(room);
 }
 

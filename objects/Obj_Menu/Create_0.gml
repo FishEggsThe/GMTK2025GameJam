@@ -3,7 +3,7 @@ var menuItems = [
 	new MenuItem("on", "inside", function(){ show_debug_message("inside"); }),
 	new MenuItem("my balls", "minas bolinhas", function(){ show_debug_message("minas bolinhas"); })
 ]
-currentMenu = new Menu(menuItems);
+currentMenu = new Menu(menuItems, id);
 
 menuIndex = 0;
 menuLength = array_length(menuItems)

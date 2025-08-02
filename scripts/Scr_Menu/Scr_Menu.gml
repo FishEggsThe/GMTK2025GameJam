@@ -6,8 +6,8 @@ function Menu(items, creator) constructor {
 	menuLength = array_length(menuItems)
 	
 	function HandleInputs() {
-		var menuInput = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
-		var confirmInput = keyboard_check_pressed(vk_space);
+		var menuInput = InputPressed(INPUT_VERB.DOWN) - InputPressed(INPUT_VERB.UP);
+		var confirmInput = InputPressed(INPUT_VERB.DASH);
 
 		menuIndex = clamp(menuIndex+menuInput, 0, menuLength-1);
 		var selected = menuItems[menuIndex];

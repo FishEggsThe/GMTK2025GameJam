@@ -1,16 +1,20 @@
-var offset = 70;
+var offset = 70; var borderOffset = 30;
 var left = offset; var right = room_width/2 - offset;
 var top = offset; var bottom = room_height - offset;
 
 draw_set_color(c_maroon);
 draw_rectangle(left, top, right, bottom, false);
 for(var i = 0; i < menuLength; i++) {
-	var item = currentMenu.menuItems[i]; var rowHeight = 30;
+	var rowHeight = 30;
+	var index = currentMenu.menuIndex;
+	var selected = index == i;
+	var item = currentMenu.menuItems[i];
 	
-	var color = currentMenu.menuIndex == i ? c_white : c_black;
-	DrawText(left + offset, top + (i + 1)*rowHeight, item.title, fa_center, fa_middle, color);
-	DrawText(left + lerp(left, right, 0.5), top + (i + 1)*rowHeight, item.title2, fa_center, fa_middle, color);
+	var color = selected ? c_white : c_black;
+	DrawText(left + borderOffset, top + (i + 1)*rowHeight, item.title, fa_left, fa_top, color);
+	DrawText(right - borderOffset, top + (i + 1)*rowHeight, item.title2, fa_right, fa_top, color);
+	if selected { DrawText(left+borderOffset, bottom-borderOffset, item.description, fa_left, fa_bottom); }
 	
-	//var selected = currentMenu.menuIndex == i;
+	//
 	//DrawSpriteText
 }
