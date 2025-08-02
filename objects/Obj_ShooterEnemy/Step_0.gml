@@ -9,7 +9,8 @@ if canShoot && collision_line(x, y, room_width/2, room_height/2, Obj_PlayerShip,
 	array_insert(mineBank, 0, newMine);
 	if array_length(mineBank) > 1 {
 		var oldMine = array_pop(mineBank);
-		oldMine.alarm[0] = 30;
+		if oldMine != noone
+			oldMine.alarm[0] = 30;
 	}
 	
 	sprite =  spr_tankShoot_temp;

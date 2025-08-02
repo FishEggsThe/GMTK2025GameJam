@@ -84,15 +84,15 @@ function ApplyInputs() {
 			shipAngle = 0;
 		} else {
 			PlaySound(splat);
-			var noseDist = 25;
+			var noseDist = 25; var noseRadius = 10;
 			var xNose = x + noseDist * cos(degtorad(shipAngle));
 			var yNose = y - noseDist * sin(degtorad(shipAngle));
-			if position_meeting(xNose, yNose, Obj_Enemy) || 
-			   position_meeting(xNose, yNose, Obj_RaceTrackWalls) {
+			if collision_circle(xNose, yNose, noseRadius, Obj_Enemy, true, true) || 
+			   collision_circle(xNose, yNose, noseRadius, Obj_RaceTrackWalls, true, true) {
 				sprite = Spr_PlayerCarCrash;
 			} else {
 				sprite = Spr_PlayerExplode;
-				shipAngle = 0;
+				//shipAngle = 0;
 			}
 		}
 	}

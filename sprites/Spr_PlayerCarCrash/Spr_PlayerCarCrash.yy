@@ -23,7 +23,7 @@
   ],
   "name":"Spr_PlayerCarCrash",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Player Fish",
     "path":"folders/Sprites/Player Fish.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":24,
+    "xorigin":30,
     "yorigin":24,
   },
   "swatchColours":null,

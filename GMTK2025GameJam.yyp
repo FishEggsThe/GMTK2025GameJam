@@ -150,6 +150,7 @@
     {"id":{"name":"spr_dust_temp","path":"sprites/spr_dust_temp/spr_dust_temp.yy",},},
     {"id":{"name":"Spr_DustMite","path":"sprites/Spr_DustMite/Spr_DustMite.yy",},},
     {"id":{"name":"Spr_EnemyLandMarker","path":"sprites/Spr_EnemyLandMarker/Spr_EnemyLandMarker.yy",},},
+    {"id":{"name":"Spr_EnemyLandMarker61","path":"sprites/Spr_EnemyLandMarker61/Spr_EnemyLandMarker61.yy",},},
     {"id":{"name":"Spr_Flash","path":"sprites/Spr_Flash/Spr_Flash.yy",},},
     {"id":{"name":"Spr_Font","path":"sprites/Spr_Font/Spr_Font.yy",},},
     {"id":{"name":"Spr_FontSelected","path":"sprites/Spr_FontSelected/Spr_FontSelected.yy",},},
