@@ -32,6 +32,7 @@ function CountLap() {
 	
 	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiL,15);
 	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiR,15);
+	instance_create_layer(Obj_PlayerShip.x, Obj_PlayerShip.y, "Particles", Obj_Flash);
 }
 
 function PassedCheckpoint(index) {

@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Player Fish",
+    "path":"folders/Sprites/Player Fish.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,4 +1,4 @@
-DrawSprite(sprite, 0, x, y, 1, 1, shipAngle);
+DrawSprite(sprite, friedDeathIndex, x, y, 1, 1, shipAngle);
 
 if CheckDebug() {
 	draw_text(x, y, point_distance(x, y, x+xSpeed, y-ySpeed));

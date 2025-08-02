@@ -55,7 +55,7 @@ function ApplyInputs() {
 	if dashCooldown > 0 {
 		dashCooldown--;
 		//if dashCooldown <= 0 {
-		//	Obj_ParticleManager.bubbleDashReady(x, y);
+		//	instance_create_layer(Obj_PlayerShip.x, Obj_PlayerShip.y, "Particles", Obj_Flash);
 		//}
 	}
 

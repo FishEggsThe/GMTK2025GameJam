@@ -40,6 +40,8 @@ bubbleTimer = 0;
 engineTimerSet = 4;
 engineTimer = engineTimerSet;
 
+friedDeathIndex = 0;
+
 moveState = function(){};
 moving = function() {
 	ReadInputs();
