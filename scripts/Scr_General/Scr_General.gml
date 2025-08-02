@@ -78,7 +78,7 @@ function CheckDebug() {
 }
 
 function CheckIfDuplicate(inst = id) {
-	if instance_number(inst) > 1 { instance_destroy(); exit; }
+	if instance_number(inst.object_index) > 1 { instance_destroy(); exit; }
 }
 
 function ShakeScreen(amount) {

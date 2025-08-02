@@ -22,7 +22,7 @@ function FillBackgroundStorage() {
 	currentBackground = [new BattleBackgroundData(Spr_Lines2, 1/5000, 1.5, 1, 0, 0, 0),
 						 new BattleBackgroundData(Spr_Lines2, 1/6000, 1.5, 1, 1, 1, 0)]
 	ds_list_add(backgroundStorage, currentBackground)
-	
+
 	// Cyberspace Ocean
 	currentBackground = [new BattleBackgroundData(Spr_BattlePolka, 1/5000, 1.5, 1, 0, 1, 1),
 						 new BattleBackgroundData(Spr_BattlePolka, 1/6000, 1.5, 1, 1, 0, 1)]

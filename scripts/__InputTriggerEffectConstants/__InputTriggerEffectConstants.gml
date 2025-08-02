@@ -1,5 +1,5 @@
 //DualSense haptic trigger effect states
-
+// feather ignore all once
 enum INPUT_TRIGGER_STATE
 {
     EFFECT_OFF               = ps5_gamepad_trigger_effect_state_off,
