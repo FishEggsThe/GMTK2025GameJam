@@ -28,6 +28,8 @@ global.partConfettiR = part_type_create();
 global.partConfettiL = part_type_create();
 global.partTrailDust = part_type_create();
 global.partTrailGhost = part_type_create();
+global.partCatR = part_type_create();
+global.partCatL = part_type_create();
 
 // confetti stuff
 // confetti that goes to the right
@@ -54,6 +56,24 @@ part_type_sprite(global.partTrailDust,Spr_DustMite,false,false,true);
 // the ghost enemy's trail
 part_type_size(global.partTrailGhost,1.2,1.2,-0.075,0);
 part_type_sprite(global.partTrailGhost,Spr_Circle,false,false,false);
+
+// cat stuff
+// cat that goes to the right
+part_type_direction(global.partCatR,60,120,0,0);
+part_type_orientation(global.partCatR,-20,20,-1,0,0);
+part_type_size(global.partCatR,0.5,1,0,0);
+part_type_speed(global.partCatR,6,12,-0.05,0);
+part_type_gravity(global.partCatR,0.2,-90);
+part_type_sprite(global.partCatR,cats,false,false,true);
+part_type_life(global.partCatR, 5*60, 5*60)
+//// cat that goes to the left
+//part_type_direction(global.partCatL,90,135,0,0);
+//part_type_orientation(global.partCatL,-20,20,1,0,0);
+//part_type_size(global.partCatL,0.5,1,0,0);
+//part_type_speed(global.partCatL,6,12,-0.05,0);
+//part_type_gravity(global.partCatL,0.2,-90);
+//part_type_sprite(global.partCatL,cats,false,false,true);
+//part_type_life(global.partCatL, 5*60, 5*60)
 
 bubbles = function(_x, _y) {
 	for(var i = -2; i < 1; i++){

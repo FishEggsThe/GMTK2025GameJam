@@ -43,6 +43,8 @@ function CountLap() {
 	
 	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiL,15);
 	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiR,15);
+	//part_particles_create(global.partSystem,room_width/4,room_height,global.partCatL,1);
+	part_particles_create(global.partSystem,room_width/2,room_height+75,global.partCatR,1);
 	instance_create_layer(Obj_PlayerShip.x, Obj_PlayerShip.y, "Particles", Obj_Flash);
 }
 
