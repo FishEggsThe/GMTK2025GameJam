@@ -76,7 +76,7 @@ function CheckIfNextCheckpoint(checkpoint) {
 		}
 	}
 }
-
+// feather ignore once all
 function SetupCheckpoints() {
 	for(var i = 0; i < instance_number(Obj_Checkpoint); i++) {
 		array_push(checkpoints, instance_find(Obj_Checkpoint, i));

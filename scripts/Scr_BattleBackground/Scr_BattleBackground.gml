@@ -1,3 +1,4 @@
+// feather ignore once all
 function BattleBackgroundData(_sprite, _progress, _length, _frequency, _horizontal, _split, _ripple) constructor {
 	battleBackground = _sprite
 	var uv = sprite_get_uvs(battleBackground, 0)

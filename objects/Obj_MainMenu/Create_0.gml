@@ -1,8 +1,9 @@
 event_inherited();
 
 var mainItems = [
-	new MenuItem("Play", "GO!!!!!!!!!!!!!!", function(c){ StartIntro(); menuMode = false; }),
-	new MenuItem("Options", "Do nerd things", function(c){ c.currentMenu = c.optionsMenu; c.currentMenu.menuItems[0].onUpdate(c.currentMenu.menuItems[0]); c.currentMenu.menuItems[1].onUpdate(c.currentMenu.menuItems[1]); }),
+	new MenuItem("Play", "Start the game", function(c){ StartIntro(); menuMode = false; }),
+	new MenuItem("Options", "Adjust a few\nsettings to\nyour liking", function(c){ c.currentMenu = c.optionsMenu; c.currentMenu.menuItems[0].onUpdate(c.currentMenu.menuItems[0]); c.currentMenu.menuItems[1].onUpdate(c.currentMenu.menuItems[1]); }),
+	new MenuItem("Leaderboards", "View scores\nfrom players\nonline", function(c){ menuMode = false; Obj_HighScoreManager.showScoresFirebase() }),
 	new MenuItem("Quit", "Leave", function(c){ game_end(); })
 ]
 mainMenu = new Menu(mainItems, id);

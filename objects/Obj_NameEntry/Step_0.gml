@@ -26,9 +26,8 @@ if confirm {
 		name += string_char_at(allowedCharacters, theBigThree[2]+1);
 		show_message($"{name} with score {pScore}");
 		with Obj_HighScoreManager {
-			//addScoreFirebase(pScore, name);
-			allowScoreReading = true;
-			showScoresFirebase();
+			addScoreFirebase(pScore, name);
+			showScoresFirebase(true);
 		}
 		instance_destroy();
 	}

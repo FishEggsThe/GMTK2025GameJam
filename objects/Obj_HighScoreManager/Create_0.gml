@@ -30,9 +30,9 @@ addScoreFirebase = function(p, n) {
 	}
 }
 
-showScoresFirebase = function() {
+showScoresFirebase = function(forceRead = false) {
 	showScores = true;
-	if allowScoreReading {
+	if allowScoreReading || forceRead {
 		allowScoreReading = false;
 		alarm[0] = allowTimerSet;
 		data = [];
