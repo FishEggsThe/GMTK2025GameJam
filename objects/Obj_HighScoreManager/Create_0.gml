@@ -1,15 +1,20 @@
-if CheckIfDuplicate() { exit; }
+CheckIfDuplicate()
 
 depth = -15;
 //numOfHighScores = 0;
 //highScores = [];
 
-ifUsing = false;
-showScores = true;
+ifUsing = true;
+showScores = false;
 numOfScoresShown = 5;
 
+errorLoading = false;
+allowScoreReading = true;
+allowTimerSet = 60*60;
+//alarm[0] = allowTimerSet;
+
 root = "highscores";
-listener = ifUsing ? FirebaseFirestore(root).Listener() : -1;
+listener = FirebaseFirestore(root).Listener();
 data = [];
 
 sort_score = function(_a, _b) {
@@ -17,10 +22,24 @@ sort_score = function(_a, _b) {
 }
 
 addScoreFirebase = function(p, n) {
-	var i = min(array_length(data), numOfScoresShown-1);
-	if p > data[i] {
+	var i = numOfScoresShown-1;
+	if numOfScoresShown >= array_length(data) || p > data[i] {
 		data = [];
 		var doc = json_stringify(InitializeScore(p, n));
 		FirebaseFirestore(root).Set(doc);
 	}
+}
+
+showScoresFirebase = function() {
+	showScores = true;
+	if allowScoreReading {
+		allowScoreReading = false;
+		alarm[0] = allowTimerSet;
+		data = [];
+		FirebaseFirestore(root).Query();
+	}
+}
+
+hideScores = function() {
+	showScores = false;
 }

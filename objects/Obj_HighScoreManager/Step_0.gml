@@ -1,4 +1,10 @@
 if Obj_Debug.debug {
+	
+	if keyboard_check_released(ord("O"))
+		showScoresFirebase()
+	if keyboard_check_released(ord("P"))
+		hideScores()
+	
 	if keyboard_check_released(ord("Q")) {
 		var p = irandom(100), n = $"testing{p}"
 		show_message($"Adding {n}");

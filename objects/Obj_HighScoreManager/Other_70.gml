@@ -25,5 +25,6 @@ if async_load[? "status"] == 200 {
 			break;
 	}
 } else {
-	show_message(async_load[? "status"]);
+	errorLoading = true;
+	show_debug_message(async_load[? "status"]);
 }
