@@ -10,8 +10,8 @@
   "name":"Obj_Control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Misc.yy",
+    "name":"Persistent",
+    "path":"folders/Objects/Persistent.yy",
   },
   "parentObjectId":null,
   "persistent":true,
