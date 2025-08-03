@@ -1,4 +1,5 @@
 function StartIntro() {
+	instance_create_layer(x, y, "Instances", Obj_Countdown);
 	StopMusic();
 	PlaySound(Beep_beep_beep_GO);
 	Obj_Control.playGameIntro = false;
