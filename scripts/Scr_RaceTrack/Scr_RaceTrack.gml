@@ -42,10 +42,14 @@ function CountLap() {
 	with Obj_EnemySpawner { IncrementWaveCounter(); }
 	with Obj_ShooterEnemy { canShoot = true; }
 	
-	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiL,15);
-	part_particles_create(global.partSystem,room_width/2,room_height,global.partConfettiR,15);
+	var spawnPosA = room_width/8;
+	var spawnPosB = room_width*7/8;
+	part_particles_create(global.partSystem,spawnPosA,room_height,global.partConfettiL,15);
+	part_particles_create(global.partSystem,spawnPosB,room_height,global.partConfettiR,15);
 	//part_particles_create(global.partSystem,room_width/4,room_height,global.partCatL,1);
-	part_particles_create(global.partSystem,room_width/2,room_height+75,global.partCatR,1);
+	part_particles_create(global.partSystem,spawnPosA,room_height+75,global.partCatR,2);
+	part_particles_create(global.partSystem,spawnPosB,room_height+75,global.partCatR,2);
+	PlaySound(Cats);
 	instance_create_layer(Obj_PlayerShip.x, Obj_PlayerShip.y, "Particles", Obj_Flash);
 	
 	if highScoreReached { exit; }

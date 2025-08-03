@@ -2,7 +2,4 @@ Do this:
 
 * Ghost is useless
 * Make lap timer decrease per wave and stuff
-* Make Shooter Mines appear from sky instead of low arcing bounce
 * Ghost should flash before dash
-* Do text where the text is sprites
-* Fullscreen option in options

@@ -144,7 +144,7 @@ function ChangeAnimationState(index) {
 			sprite = Spr_PlayerUnDash;
 			break;
 		default:
-			PlaySound(Dash_Recharge__2_);
+			PlaySound(Dash_Recharge__2_21);
 			animationState = regular;
 			sprite = Spr_PlayerFish;
 	}

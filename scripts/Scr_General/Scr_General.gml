@@ -9,7 +9,7 @@ function DrawText(_x, _y, _string, _halign, _valign, _color=c_black, _xscale=1, 
 }
 
 function DrawSpriteText(_string, _x, _y, _size = 3, _halign = fa_left, _valign = fa_top, _selected = false) {
-	var fontContains = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+	var fontContains = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890+";
 	var containsLength = string_length(fontContains)
 	
 	var trueString = ""

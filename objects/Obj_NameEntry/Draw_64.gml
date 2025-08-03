@@ -3,7 +3,7 @@ var positions = [[room_width/5, room_height/2],
 				 [room_width*4/5, room_height/2],
 				 [room_width/2, room_height*4/5]]
 
-var allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+var allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890+";
 
 DrawScoreBackground();
 for(var i = 0; i < numOfOptions; i++) {

@@ -1,4 +1,4 @@
-theBigThree = [0, 0, 0];
+theBigThree = Obj_Control.playerNameCode;
 currentOption = 0;
 
 numOfLetters = array_length(theBigThree);

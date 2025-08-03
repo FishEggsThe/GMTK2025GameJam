@@ -23,8 +23,12 @@ sort_score = function(_a, _b) {
 
 addScoreFirebase = function(p, n) {
 	var i = numOfScoresShown-1;
-	if numOfScoresShown >= array_length(data) || p > data[i] {
-		show_message("do that")
+	var conditionA = numOfScoresShown >= array_length(data);
+	var conditionB = p > data[i].points; // DOT POINTS!!!! ADD DOT POINTS!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	//show_message($"{conditionA} or {conditionB} is {conditionA || conditionB}")
+	if conditionA || conditionB {
+		//show_message($"{p} vs. {data[(min( i, array_length(data)-1 ))]}")
 		data = [];
 		var doc = json_stringify(InitializeScore(p, n));
 		FirebaseFirestore(root).Set(doc);
