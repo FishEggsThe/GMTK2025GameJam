@@ -1,5 +1,9 @@
+function GetVolume() {
+	return Obj_AudioPlayer.gameVolume/100;
+}
+
 function PlaySound(sound, pitch = 1) {
-	audio_play_sound(sound, 1, false, 1, 0, pitch);
+	audio_play_sound(sound, 1, false, GetVolume(), 0, pitch);
 }
 
 function PlayMusic(music, pitch = 1) {
@@ -7,7 +11,7 @@ function PlayMusic(music, pitch = 1) {
 		if currentMusic != music {
 			audio_stop_sound(currentMusic);
 			currentMusic = music;
-			audio_play_sound(music, 1, true, 1, 0, pitch);
+			audio_play_sound(music, 1, true, GetVolume(), 0, pitch);
 		}
 	}
 }
