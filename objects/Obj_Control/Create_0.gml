@@ -13,7 +13,7 @@ directory = working_directory;
 saveFileName = "savedatadonottouch.txt"
 //fileName = directory + saveFileName
 fileName = saveFileName
-show_message(fileName);
+//show_message(fileName);
 
 
 setScore = function() {
@@ -24,10 +24,6 @@ setScore = function() {
 		file_text_close(file);
 	} catch(_exception) {
 		show_debug_message("oh well, so sad, don't care");
-		show_debug_message(_exception.message);
-	    show_debug_message(_exception.longMessage);
-	    show_debug_message(_exception.script);
-	    show_debug_message(_exception.stacktrace);
 		playerScore = "0";
 	}
 }
@@ -45,10 +41,6 @@ getScore = function() {
 		file_text_close(file);
 	} catch(_exception) {
 		show_debug_message("oh well, so sad, don't care");
-		show_debug_message(_exception.message);
-	    show_debug_message(_exception.longMessage);
-	    show_debug_message(_exception.script);
-	    show_debug_message(_exception.stacktrace);
 		playerScore = "0";
 	}
 }

@@ -10,7 +10,7 @@ numOfScoresShown = 5;
 
 errorLoading = false;
 allowScoreReading = false;
-allowTimerSet = 60*60;
+allowTimerSet = 10*60;
 alarm[0] = allowTimerSet;
 
 root = "highscores";
