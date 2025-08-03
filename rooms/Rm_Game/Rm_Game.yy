@@ -40,11 +40,11 @@
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":64,"gridY":64,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Particles","depth":200,"effectEnabled":true,"effectType":null,"gridX":64,"gridY":64,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Particles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":64,"gridY":64,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[
-          1,0,-3,-2147483648,1,2,-11,-2147483648,8,1,-2147483648,1,-2147483648,-2147483648,0,-2147483648,1,-15,
-          -2147483648,1,2,-17,-2147483648,1,0,-3,-2147483648,1,3,-37,-2147483648,2,1,2,-17,-2147483648,1,0,-22,
+          5,0,1,-2147483648,-2147483648,2,-11,-2147483648,8,1,-2147483648,1,-2147483648,2,0,-2147483648,1,-15,
+          -2147483648,2,2,0,-16,-2147483648,1,0,-3,-2147483648,1,3,-37,-2147483648,2,1,2,-17,-2147483648,1,0,-22,
           -2147483648,1,2,-17,-2147483648,1,2,-20,-2147483648,1,1,-37,-2147483648,2,2,1,-21,-2147483648,1,1,-15,
-          -2147483648,7,1,-2147483648,-2147483648,2,-2147483648,-2147483648,0,-12,-2147483648,1,2,-6,-2147483648,
-          3,1,-2147483648,0,-12,-2147483648,2,1,-2147483648,
+          -2147483648,7,0,-2147483648,-2147483648,2,-2147483648,-2147483648,0,-12,-2147483648,1,2,-6,-2147483648,
+          3,1,-2147483648,0,-12,-2147483648,2,0,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_525E51D4","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_525E51D4","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25,"spriteId":{"name":"explosion","path":"sprites/explosion/explosion.yy",},"x":576.0,"y":320.0,},
@@ -64,7 +64,7 @@
   "name":"Rm_Game",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Particle Systems/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -101,8 +101,8 @@ function ApplyInputs() {
 			   collision_circle(xNose, yNose, noseRadius, Obj_RaceTrackWalls, true, true) {
 				sprite = Spr_PlayerCarCrash;
 			} else {
-				sprite = Spr_PlayerExplode;
-				//shipAngle = 0;
+				sprite = Spr_PlayerDead;
+				shipAngle -= 90;
 			}
 		}
 	}

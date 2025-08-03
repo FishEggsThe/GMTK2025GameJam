@@ -14,5 +14,4 @@ DrawSprite(spr_raceCircleScreen, 0, x, y, 1, 1, 0, c_white, alpha);
 //	draw_text(checkpoint.x, checkpoint.y, i);
 //}
 
-DrawText(0, 0, "Score: " + string(playerScore), fa_left, fa_top, c_white, 2, 2);
-DrawText(0, 20, "Laps: " + string(lapsCompleted), fa_left, fa_top, c_white, 2, 2);
+DrawSpriteText(string(playerScore), room_width, room_height, 2, fa_right, fa_bottom, true);
