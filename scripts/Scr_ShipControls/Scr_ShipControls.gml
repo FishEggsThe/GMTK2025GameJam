@@ -122,7 +122,7 @@ function ShipDies() {
 	PlaySound(Death__1_);
 	
 	if Obj_RaceTrack.highScoreReached {
-		show_message("Name entry here");
+		instance_create_layer(0, 0, "Instances", Obj_NameEntry);
 	} else {
 		Obj_RunEndMenu.menuMode = true;
 	}

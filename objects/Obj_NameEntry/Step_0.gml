@@ -6,7 +6,13 @@ if confirm {
 		theBigThree[currentOption]++;
 		theBigThree[currentOption] %= allCharacters;
 	} else {
-		show_message("The score has been sent to the elder loopers");
+		var pScore = Obj_RaceTrack.playerScore;
+		var allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		var name = string_char_at(allowedCharacters, theBigThree[0]+1);
+		name += string_char_at(allowedCharacters, theBigThree[1]+1);
+		name += string_char_at(allowedCharacters, theBigThree[2]+1);
+		show_message($"{name} with score {pScore}");
+		//Obj_HighScoreManager.addScoreFirebase(pScore, name);
 	}
 }
 
