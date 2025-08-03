@@ -14,7 +14,7 @@ allowTimerSet = 10*60;
 alarm[0] = allowTimerSet;
 
 root = "highscores";
-listener = FirebaseFirestore(root).Listener();
+listener = ifUsing ? FirebaseFirestore(root).Listener() : -1;
 data = [];
 
 sort_score = function(_a, _b) {
