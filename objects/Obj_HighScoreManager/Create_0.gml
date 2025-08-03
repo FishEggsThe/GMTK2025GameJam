@@ -24,6 +24,7 @@ sort_score = function(_a, _b) {
 addScoreFirebase = function(p, n) {
 	var i = numOfScoresShown-1;
 	if numOfScoresShown >= array_length(data) || p > data[i] {
+		show_message("do that")
 		data = [];
 		var doc = json_stringify(InitializeScore(p, n));
 		FirebaseFirestore(root).Set(doc);

@@ -8,7 +8,7 @@ if ifUsing && showScores {
 if Obj_Debug.debug {
 	
 	if keyboard_check_released(ord("O"))
-		showScoresFirebase()
+		showScoresFirebase(true)
 	if keyboard_check_released(ord("P"))
 		hideScores()
 	

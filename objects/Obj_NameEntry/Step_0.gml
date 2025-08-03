@@ -24,7 +24,7 @@ if confirm {
 		var name = string_char_at(allowedCharacters, theBigThree[0]+1);
 		name += string_char_at(allowedCharacters, theBigThree[1]+1);
 		name += string_char_at(allowedCharacters, theBigThree[2]+1);
-		show_message($"{name} with score {pScore}");
+		//show_message($"{name} with score {pScore}");
 		with Obj_HighScoreManager {
 			addScoreFirebase(pScore, name);
 			showScoresFirebase(true);
