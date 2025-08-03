@@ -15,6 +15,7 @@ dashCooldownSet = 60;
 dashCooldown = 0;
 
 dead = false;
+canRestart = false;
 
 sprite = Spr_PlayerFish;
 regular = function() {

@@ -8,7 +8,7 @@ function StartIntro() {
 	}
 }
 function StartRace() {
-	with Obj_PlayerShip { moveState = moving; }
+	with Obj_PlayerShip { moveState = moving; canRestart = true; }
 	with Obj_EnemySpawner { SpawnFirstWave(); }
 	startTimer = true;
 	PlayMusic(SWIM_FISH_SWIM);

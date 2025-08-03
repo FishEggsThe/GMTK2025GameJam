@@ -1,0 +1,2 @@
+if menuMode
+	currentMenu.DrawEndMenu();

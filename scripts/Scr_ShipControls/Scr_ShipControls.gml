@@ -1,4 +1,6 @@
 function ReadInputs() {
+	
+	
 	var turnSide = InputCheck(INPUT_VERB.LEFT) - InputCheck(INPUT_VERB.RIGHT);
 	var accelerateInput;
 	var dashInput;
