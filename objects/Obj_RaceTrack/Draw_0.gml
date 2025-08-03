@@ -14,4 +14,6 @@ DrawSprite(spr_raceCircleScreen, 0, x, y, 1, 1, 0, c_white, alpha);
 //	draw_text(checkpoint.x, checkpoint.y, i);
 //}
 
-DrawSpriteText(string(playerScore), room_width, room_height, 2, fa_right, fa_bottom, true);
+var drawScore = string(playerScore);
+if highScoreReached { drawScore = "NEW " + drawScore; }
+DrawSpriteText(drawScore, room_width, room_height, 2, fa_right, fa_bottom, true);

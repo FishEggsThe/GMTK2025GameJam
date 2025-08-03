@@ -9,9 +9,9 @@ showScores = false;
 numOfScoresShown = 5;
 
 errorLoading = false;
-allowScoreReading = true;
+allowScoreReading = false;
 allowTimerSet = 60*60;
-//alarm[0] = allowTimerSet;
+alarm[0] = allowTimerSet;
 
 root = "highscores";
 listener = FirebaseFirestore(root).Listener();

@@ -34,7 +34,7 @@ function ResetCheckpoints() {
 
 function CountLap() {
 	lapsCompleted++;
-	playerScore += 3 + ceil((frames-1)*timeToLap/timeToLapSet);
+	playerScore += 3 + ceil((frames-1)*timeToLap/timeToLapSet);	
 	timeToLap = timeToLapSet;
 	ResetCheckpoints();
 	PlaySound(Lap_2);
@@ -47,6 +47,14 @@ function CountLap() {
 	//part_particles_create(global.partSystem,room_width/4,room_height,global.partCatL,1);
 	part_particles_create(global.partSystem,room_width/2,room_height+75,global.partCatR,1);
 	instance_create_layer(Obj_PlayerShip.x, Obj_PlayerShip.y, "Particles", Obj_Flash);
+	
+	if highScoreReached { exit; }
+	with Obj_HighScoreManager {
+		if numOfScoresShown >= array_length(data) || Obj_RaceTrack.playerScore > data[numOfScoresShown-1].points {
+			Obj_RaceTrack.highScoreReached = true;
+			Obj_PlayerShip.canRestart = false;
+		}
+	}
 }
 
 function PassedCheckpoint(index) {

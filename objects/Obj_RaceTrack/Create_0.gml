@@ -4,6 +4,7 @@ startTimer = !Obj_Control.playGameIntro;
 checkpoints = [];
 lapsCompleted = 0;
 playerScore = 0;
+highScoreReached = false;
 SetupCheckpoints();
 
 getTimeInSeconds = function() {

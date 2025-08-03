@@ -121,12 +121,11 @@ function ShipDies() {
 	ShakeScreen(12);
 	PlaySound(Death__1_);
 	
-	Obj_RunEndMenu.menuMode = true;
-	
-	//with Obj_HighScoreManager {
-	//	showScores = true;
-	//	addScoreFirebase(Obj_RaceTrack.lapsCompleted, Obj_Control.playerName);
-	//}
+	if Obj_RaceTrack.highScoreReached {
+		show_message("Name entry here");
+	} else {
+		Obj_RunEndMenu.menuMode = true;
+	}
 }
 
 function ChangeAnimationState(index) {
