@@ -1,1 +1,1 @@
-//if room != Rm_Game { playGameIntro = true; }
+getScore();

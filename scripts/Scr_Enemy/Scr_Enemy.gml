@@ -35,8 +35,9 @@ function FaceSpawnAnimate() {
 function SpawnWave() {
 	FaceSpawnAnimate();
 	SpawnEnemy(enemyPoolEasy, irandom(1));
-	repeat(1 + (Obj_RaceTrack.lapsCompleted % 3 == 0))
-		SpawnEnemy(enemyPoolHard, irandom(2));
+	SpawnEnemy(enemyPoolHard, irandom(1));
+	if Obj_RaceTrack.lapsCompleted % 2 == 0
+		SpawnEnemy(enemyPoolGhost, 0);
 	
 	// Gauntlet numbers
 	//repeat(10) {
@@ -52,7 +53,7 @@ function SpawnFirstWave() {
 	SpawnEnemy(enemyPoolEasy, 0);
 	SpawnEnemy(enemyPoolEasy, 2);
 	repeat(2)
-		SpawnEnemy(enemyPoolHard, irandom(2));
+		SpawnEnemy(enemyPoolHard, irandom(1));
 }
 
 function IncrementWaveCounter() {

@@ -1,11 +1,11 @@
 if async_load[? "status"] == 200 {
-	show_message(async_load[? "type"]);
+	//show_message(async_load[? "type"]);
 	switch (async_load[? "type"]) {
 		//case "FirebaseFirestore_Collection_Add":
 		//	listener = FirebaseFirestore(root).Listener();
 		//	break;
 		case "FirebaseFirestore_Collection_Listener":
-			FirebaseFirestore(root).Query();
+			alarm[2] = 2*60;
 			break;
 		case "FirebaseFirestore_Collection_Query":
 			data = [];

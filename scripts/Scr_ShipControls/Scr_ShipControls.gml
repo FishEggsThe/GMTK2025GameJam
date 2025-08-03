@@ -121,6 +121,11 @@ function ShipDies() {
 	ShakeScreen(12);
 	PlaySound(Death__1_);
 	
+	if Obj_RaceTrack.playerScore > Obj_Control.playerScore {
+		Obj_Control.playerScore = Obj_RaceTrack.playerScore;
+		Obj_Control.setScore();
+	}
+	
 	if Obj_RaceTrack.highScoreReached {
 		instance_create_layer(0, 0, "Instances", Obj_NameEntry);
 	} else {
@@ -144,8 +149,8 @@ function ChangeAnimationState(index) {
 			sprite = Spr_PlayerUnDash;
 			break;
 		default:
-			PlaySound(Dash_Recharge__2_21);
 			animationState = regular;
 			sprite = Spr_PlayerFish;
+			PlaySound(Dash_Recharge__2_21, random_range(0.95, 1.05));
 	}
 }
