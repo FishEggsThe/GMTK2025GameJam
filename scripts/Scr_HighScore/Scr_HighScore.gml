@@ -21,3 +21,7 @@ function DrawHighScores() {
 		i++;
 	}
 }
+
+function DrawScoreBackground() {
+	draw_sprite_ext(Msk_Checkpoint, 0, room_width/2, room_height/2, 25, 20, 0, c_gray, 0.5);
+}

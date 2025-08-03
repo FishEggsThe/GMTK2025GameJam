@@ -5,6 +5,7 @@ var positions = [[room_width/5, room_height/2],
 
 var allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
+DrawScoreBackground();
 for(var i = 0; i < numOfOptions; i++) {
 	if i < numOfLetters {
 		var char = string_char_at(allowedCharacters, theBigThree[i]+1);

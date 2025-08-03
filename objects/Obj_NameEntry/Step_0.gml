@@ -30,6 +30,7 @@ if confirm {
 			allowScoreReading = true;
 			showScoresFirebase();
 		}
+		instance_destroy();
 	}
 }
 

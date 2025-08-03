@@ -1,3 +1,10 @@
+if ifUsing && showScores {
+	if InputPressed(INPUT_VERB.DASH) {
+		hideScores();
+		alarm[1] = 1;
+	}
+}
+
 if Obj_Debug.debug {
 	
 	if keyboard_check_released(ord("O"))
