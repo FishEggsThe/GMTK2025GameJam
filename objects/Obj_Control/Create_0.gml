@@ -8,6 +8,7 @@ playGameIntro = true;
 singleButton = false;
 
 inGhostGauntlet = false;
+chosenGauntletEnemy = Obj_DustEnemy;
 
 directory = working_directory;
 saveFileName = "savedatadonottouch.txt"

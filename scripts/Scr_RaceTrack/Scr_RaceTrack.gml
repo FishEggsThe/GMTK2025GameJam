@@ -1,3 +1,7 @@
+function StartGauntlet(enemy) {
+	StartIntro(); menuMode = false; Obj_Control.chosenGauntletEnemy = enemy;
+}
+
 function StartIntro() {
 	instance_create_layer(x, y, "Instances", Obj_Countdown);
 	StopMusic();
@@ -20,7 +24,7 @@ function RestartRoom() {
 	Obj_Control.playGameIntro = true;
 	StopMusic();
 	room_goto(Rm_Game);
-	PlayMusic(Sleep_Machine);
+	PlayMusic(Sleepiest_Machine__1_);
 }
 
 function ResetCheckpoints() {

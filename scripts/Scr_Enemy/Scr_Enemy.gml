@@ -32,28 +32,37 @@ function FaceSpawnAnimate() {
 	PlaySound(Spawn_2, random_range(0.95, 1.05));
 }
 
+function SpawnGauntlet(enemy) {
+	repeat(10)
+		instance_create_layer(x, y, "Enemies", enemy);
+}
+
 function SpawnWave() {
 	FaceSpawnAnimate();
-	SpawnEnemy(enemyPoolEasy, irandom(1));
-	SpawnEnemy(enemyPoolHard, irandom(1));
-	if Obj_RaceTrack.lapsCompleted % 2 == 0
-		SpawnEnemy(enemyPoolGhost, 0);
+	//SpawnEnemy(enemyPoolEasy, irandom(1));
+	//SpawnEnemy(enemyPoolHard, irandom(1));
+	//if Obj_RaceTrack.lapsCompleted % 2 == 0
+	//	SpawnEnemy(enemyPoolGhost, 0);
 	
 	// Gauntlet numbers
+	SpawnGauntlet(chosenGauntletEnemy);
 	//repeat(10) {
-		//SpawnEnemy(enemyPoolEasy, 0);
-		//SpawnEnemy(enemyPoolEasy, 1);
-		//SpawnEnemy(enemyPoolEasy, 2);
-		//SpawnEnemy(enemyPoolHard, 0);
-		//SpawnEnemy(enemyPoolHard, 1);
+	//	SpawnEnemy(enemyPoolEasy, 0);
+	//	SpawnEnemy(enemyPoolEasy, 1);
+	//	SpawnEnemy(enemyPoolEasy, 2);
+	//	SpawnEnemy(enemyPoolHard, 0);
+	//	SpawnEnemy(enemyPoolHard, 1);
 	//}
 }
 function SpawnFirstWave() {
+	chosenGauntletEnemy = Obj_Control.chosenGauntletEnemy;
 	FaceSpawnAnimate()
-	SpawnEnemy(enemyPoolEasy, 0);
-	SpawnEnemy(enemyPoolEasy, 2);
-	repeat(2)
-		SpawnEnemy(enemyPoolHard, irandom(1));
+	//SpawnEnemy(enemyPoolEasy, 0);
+	//SpawnEnemy(enemyPoolEasy, 2);
+	//repeat(2)
+	//	SpawnEnemy(enemyPoolHard, irandom(1));
+	
+	SpawnGauntlet(chosenGauntletEnemy);
 }
 
 function IncrementWaveCounter() {
